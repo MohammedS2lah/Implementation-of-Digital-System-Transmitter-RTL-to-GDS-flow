@@ -79,6 +79,11 @@ After synthesis, the following key outputs are generated for use in **verificati
 | **Equivalence Files**       | `.svf` or reference files for Formality checks                        |
 | **Constraint Dump (.sdc)**  | Updated constraints for placement and optimization in physical design |
 
+
+
+![image](https://github.com/user-attachments/assets/71304f34-0a7e-4702-ae9a-2dd3d8af9703)
+
+
 ---
 
 ## 📌 Summary
