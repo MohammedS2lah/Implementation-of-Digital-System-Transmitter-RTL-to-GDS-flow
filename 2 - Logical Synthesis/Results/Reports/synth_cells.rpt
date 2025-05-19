@@ -1,0 +1,54 @@
+ 
+****************************************
+Report : cell
+Design : dig_tx_system
+Version: O-2018.06-SP1
+Date   : Wed May 14 22:01:56 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U4                        OR2X1_LVT       saed32lvt_ss0p7v125c
+                                                          2.033152  
+U5                        NBUFFX2_LVT     saed32lvt_ss0p7v125c
+                                                          2.033152  
+U6                        INVX4_LVT       saed32lvt_ss0p7v125c
+                                                          2.033152  
+U7                        INVX1_LVT       saed32lvt_ss0p7v125c
+                                                          1.270720  
+u_dig_tx_asyn_fifo_read   dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1
+                                                          1654.223335
+                                                                    h, n, p
+u_dig_tx_asyn_fifo_write  dig_tx_asyn_fifo_FIFO_DEPTH3_REGISTER_WIDTH8
+                                                          575.382024
+                                                                    h, n, p
+u_dig_tx_control_unit     dig_tx_control_unit             202.552770
+                                                                    h, n
+u_dig_tx_crc              dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56
+                                                          474.486855
+                                                                    h, n, p
+u_dig_tx_pow_man_unit     dig_tx_pow_man_unit             2.033152  h
+u_dig_tx_pulse_delayed    dig_tx_pulse_delayed            14.232064 h, n
+u_dig_tx_reg_file         dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32
+                                                          953.040015
+                                                                    h, n, p
+u_dig_tx_rst_sync_spi     dig_tx_rst_sync_0               14.232064 h, n
+u_dig_tx_rst_sync_sys     dig_tx_rst_sync_1               14.232064 h, n
+u_dig_tx_serializer       dig_tx_serializer_32_16_24_55557a
+                                                          459.238213
+                                                                    h, n, p
+u_dig_tx_spi_clock_gating dig_tx_clock_gating_1           8.386752  h, n
+u_dig_tx_sys_clock_gating dig_tx_clock_gating_0           8.386752  h, n
+u_spi_slave               spi_slave                       866.376907
+                                                                    h, n
+--------------------------------------------------------------------------------
+Total 17 cells                                            5254.173145
+1
