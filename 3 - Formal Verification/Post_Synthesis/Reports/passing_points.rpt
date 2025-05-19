@@ -1,0 +1,1128 @@
+**************************************************
+Report         : passing_points
+
+Reference      : Ref:/WORK/dig_tx_system
+Implementation : Imp:/WORK/dig_tx_system
+Version        : O-2018.06-SP1
+Date           : Mon May 19 09:46:53 2025
+**************************************************
+
+364 Passing compare points:
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][10]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__10_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][8]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__8_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][9]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__9_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_1__0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][10]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_1__10_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_1__1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_1__2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_1__3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_1__4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_1__5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_1__6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_1__7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][8]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_1__8_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][9]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_1__9_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][10]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__10_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][8]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__8_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][9]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__9_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_3__0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][10]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_3__10_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_3__1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_3__2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_3__3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_3__4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_3__5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_3__6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_3__7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][8]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_3__8_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][9]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_3__9_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_4__0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][10]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_4__10_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_4__1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_4__2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_4__3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_4__4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_4__5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_4__6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_4__7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][8]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_4__8_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][9]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_4__9_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_5__0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][10]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_5__10_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_5__1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_5__2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_5__3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_5__4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_5__5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_5__6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_5__7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][8]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_5__8_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][9]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_5__9_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_6__0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][10]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_6__10_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_6__1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_6__2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_6__3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_6__4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_6__5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_6__6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_6__7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][8]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_6__8_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][9]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_6__9_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_7__0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][10]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_7__10_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_7__1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_7__2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_7__3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_7__4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_7__5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_7__6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_7__7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][8]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_7__8_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][9]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/fifom/fifo_reg_7__9_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_empty_reg
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_empty_reg
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg_3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_rptr/metastable_flop_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_rptr/metastable_flop_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_rptr/metastable_flop_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_rptr/metastable_flop_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_rptr/metastable_flop_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_rptr/metastable_flop_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_rptr/metastable_flop_reg[3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_rptr/metastable_flop_reg_3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg_3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_wptr/metastable_flop_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_wptr/metastable_flop_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_wptr/metastable_flop_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_wptr/metastable_flop_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_wptr/metastable_flop_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_wptr/metastable_flop_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_wptr/metastable_flop_reg[3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_wptr/metastable_flop_reg_3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg_3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg_3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_full_reg
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_full_reg
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg_3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[0][0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_0__0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[0][1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_0__1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[0][2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_0__2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[0][3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_0__3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[0][4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_0__4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[0][5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_0__5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[0][6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_0__6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[0][7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_0__7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_1__0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_1__1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_1__2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_1__3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_1__4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_1__5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_1__6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_1__7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[2][0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_2__0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[2][1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_2__1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[2][2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_2__2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[2][3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_2__3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[2][4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_2__4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[2][5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_2__5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[2][6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_2__6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg[2][7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/fifom/fifo_reg_2__7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_empty_reg
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_empty_reg
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_rptr/metastable_flop_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_rptr/metastable_flop_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_rptr/metastable_flop_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_rptr/metastable_flop_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_rptr/metastable_flop_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_rptr/metastable_flop_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_wptr/metastable_flop_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_wptr/metastable_flop_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_wptr/metastable_flop_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_wptr/metastable_flop_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_wptr/metastable_flop_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_wptr/metastable_flop_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_full_reg
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_full_reg
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_control_unit/current_state_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_control_unit/current_state_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_control_unit/current_state_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_control_unit/current_state_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_control_unit/current_state_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_control_unit/current_state_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_control_unit/stall_counter_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_control_unit/stall_counter_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_control_unit/stall_counter_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_control_unit/stall_counter_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_control_unit/stall_counter_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_control_unit/stall_counter_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/counter_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/counter_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/counter_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/counter_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/counter_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/counter_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/counter_reg[3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/counter_reg_3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/counter_reg[4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/counter_reg_4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/counter_reg[5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/counter_reg_5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/counter_reg[6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/counter_reg_6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg[10]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg_10_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg[11]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg_11_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg[12]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg_12_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg[13]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg_13_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg[14]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg_14_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg[15]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg_15_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg[3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg_3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg[4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg_4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg[5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg_5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg[6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg_6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg[7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg_7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg[8]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg_8_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg[9]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_data_out_reg_9_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_valid_reg
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/o_dig_tx_crc_valid_reg
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg[10]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg_10_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg[11]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg_11_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg[12]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg_12_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg[13]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg_13_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg[14]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg_14_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg[15]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg_15_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg[3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg_3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg[4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg_4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg[5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg_5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg[6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg_6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg[7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg_7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg[8]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg_8_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg[9]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_crc/remainder_d_reg_9_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_pulse_delayed/o_dix_pulse_d0_reg
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_pulse_delayed/o_dix_pulse_d0_reg
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_pulse_delayed/reg_delayed_reg
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_pulse_delayed/reg_delayed_reg
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[10]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_10_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[11]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_11_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[12]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_12_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[13]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_13_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[14]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_14_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[15]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_15_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[16]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_16_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[17]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_17_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[18]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_18_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[19]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_19_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[20]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_20_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[21]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_21_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[22]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_22_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[23]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_23_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[24]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_24_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[25]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_25_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[26]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_26_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[27]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_27_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[28]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_28_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[29]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_29_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[30]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_30_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[31]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_31_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[8]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_8_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[9]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg_9_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_sys_tx_done_reg
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/o_dig_tx_reg_file_sys_tx_done_reg
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[0][0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_0__0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[0][1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_0__1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[0][2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_0__2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[0][3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_0__3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[0][8]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_0__8_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[1][0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_1__0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[1][1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_1__1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[1][2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_1__2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[1][3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_1__3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[1][4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_1__4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[1][5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_1__5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[1][6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_1__6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[1][7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_1__7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[1][8]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_1__8_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[2][0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_2__0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[2][1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_2__1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[2][2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_2__2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[2][3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_2__3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[2][4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_2__4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[2][5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_2__5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[2][6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_2__6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[2][7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_2__7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[2][8]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_2__8_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[3][0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_3__0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[3][1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_3__1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[3][2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_3__2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[3][3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_3__3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[3][4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_3__4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[3][5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_3__5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[3][6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_3__6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[3][7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_3__7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[3][8]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_3__8_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[4][0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_4__0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[4][1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_4__1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[4][2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_4__2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[4][3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_4__3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[4][4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_4__4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[4][5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_4__5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[4][6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_4__6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[4][7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_4__7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg[4][8]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_reg_file/reg_file_reg_4__8_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_rst_sync_spi/sync_flops_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_rst_sync_spi/sync_flops_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_rst_sync_spi/sync_flops_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_rst_sync_spi/sync_flops_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_rst_sync_sys/sync_flops_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_rst_sync_sys/sync_flops_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_rst_sync_sys/sync_flops_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_rst_sync_sys/sync_flops_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/clock_freq_en_reg
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/clock_freq_en_reg
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_crc_phy_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_crc_phy_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_crc_phy_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_crc_phy_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_crc_phy_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_crc_phy_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_crc_phy_reg[3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_crc_phy_reg_3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_data_crc_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_data_crc_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_data_crc_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_data_crc_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_data_crc_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_data_crc_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_data_crc_reg[3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_data_crc_reg_3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_data_crc_reg[4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_data_crc_reg_4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_shr_crc_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_shr_crc_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_shr_crc_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_shr_crc_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_shr_crc_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_shr_crc_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_shr_crc_reg[3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_shr_crc_reg_3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_shr_crc_reg[4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/counter_send_shr_crc_reg_4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/o_dig_tx_serializer_crc_in_reg
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/o_dig_tx_serializer_crc_in_reg
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/o_dig_tx_serializer_crc_phy_done_reg
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/o_dig_tx_serializer_crc_phy_done_reg
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/o_dig_tx_serializer_data_crc_done_reg
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/o_dig_tx_serializer_data_crc_done_reg
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/o_dig_tx_serializer_phy_out_reg
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/o_dig_tx_serializer_phy_out_reg
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_dig_tx_serializer/o_dig_tx_serializer_shr_crc_done_reg
+  Impl DFF        Imp:/WORK/dig_tx_system/u_dig_tx_serializer/o_dig_tx_serializer_shr_crc_done_reg
+
+  Ref  LAT        Ref:/WORK/dig_tx_system/u_dig_tx_spi_clock_gating/enable_latch_reg
+  Impl LAT        Imp:/WORK/dig_tx_system/u_dig_tx_spi_clock_gating/enable_latch_reg
+
+  Ref  LAT        Ref:/WORK/dig_tx_system/u_dig_tx_sys_clock_gating/enable_latch_reg
+  Impl LAT        Imp:/WORK/dig_tx_system/u_dig_tx_sys_clock_gating/enable_latch_reg
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/bit_cnt_reg_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/bit_cnt_reg_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/bit_cnt_reg_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/bit_cnt_reg_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/bit_cnt_reg_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/bit_cnt_reg_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/csn_d_reg
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/csn_d_reg
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/miso_rde_strt_reg
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/miso_rde_strt_reg
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/miso_reg_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/miso_reg_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/miso_reg_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/miso_reg_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/miso_reg_reg[3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/miso_reg_reg_3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/miso_reg_reg[4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/miso_reg_reg_4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/miso_reg_reg[5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/miso_reg_reg_5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/miso_reg_reg[6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/miso_reg_reg_6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/miso_reg_reg[7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/miso_reg_reg_7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/mosi_reg_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/mosi_reg_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/mosi_reg_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/mosi_reg_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/mosi_reg_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/mosi_reg_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/mosi_reg_reg[3]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/mosi_reg_reg_3_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/mosi_reg_reg[4]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/mosi_reg_reg_4_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/mosi_reg_reg[5]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/mosi_reg_reg_5_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/mosi_reg_reg[6]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/mosi_reg_reg_6_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/mosi_reg_reg[7]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/mosi_reg_reg_7_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/rf_add_reg_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/rf_add_reg_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/rf_add_reg_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/rf_add_reg_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/rf_add_reg_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/rf_add_reg_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/state_reg_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/state_reg_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/state_reg_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/state_reg_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/state_reg_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/state_reg_reg_2_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/state_tx_reg[0]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/state_tx_reg_0_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/state_tx_reg[1]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/state_tx_reg_1_
+
+  Ref  DFF        Ref:/WORK/dig_tx_system/u_spi_slave/state_tx_reg[2]
+  Impl DFF        Imp:/WORK/dig_tx_system/u_spi_slave/state_tx_reg_2_
+
+  Ref  Port       Ref:/WORK/dig_tx_system/o_dig_tx_system_crc_valid
+  Impl Port       Imp:/WORK/dig_tx_system/o_dig_tx_system_crc_valid
+
+  Ref  Port       Ref:/WORK/dig_tx_system/o_dig_tx_system_data_out
+  Impl Port       Imp:/WORK/dig_tx_system/o_dig_tx_system_data_out
+
+  Ref  Port       Ref:/WORK/dig_tx_system/o_dig_tx_system_data_slave_out[0]
+  Impl Port       Imp:/WORK/dig_tx_system/o_dig_tx_system_data_slave_out[0]
+
+  Ref  Port       Ref:/WORK/dig_tx_system/o_dig_tx_system_data_slave_out[1]
+  Impl Port       Imp:/WORK/dig_tx_system/o_dig_tx_system_data_slave_out[1]
+
+  Ref  Port       Ref:/WORK/dig_tx_system/o_dig_tx_system_data_slave_out[2]
+  Impl Port       Imp:/WORK/dig_tx_system/o_dig_tx_system_data_slave_out[2]
+
+  Ref  Port       Ref:/WORK/dig_tx_system/o_dig_tx_system_data_slave_out[3]
+  Impl Port       Imp:/WORK/dig_tx_system/o_dig_tx_system_data_slave_out[3]
+
+  Ref  Port       Ref:/WORK/dig_tx_system/o_dig_tx_system_data_slave_out[4]
+  Impl Port       Imp:/WORK/dig_tx_system/o_dig_tx_system_data_slave_out[4]
+
+  Ref  Port       Ref:/WORK/dig_tx_system/o_dig_tx_system_data_slave_out[5]
+  Impl Port       Imp:/WORK/dig_tx_system/o_dig_tx_system_data_slave_out[5]
+
+  Ref  Port       Ref:/WORK/dig_tx_system/o_dig_tx_system_data_slave_out[6]
+  Impl Port       Imp:/WORK/dig_tx_system/o_dig_tx_system_data_slave_out[6]
+
+  Ref  Port       Ref:/WORK/dig_tx_system/o_dig_tx_system_data_slave_out[7]
+  Impl Port       Imp:/WORK/dig_tx_system/o_dig_tx_system_data_slave_out[7]
+
+  Ref  Port       Ref:/WORK/dig_tx_system/o_dig_tx_system_done
+  Impl Port       Imp:/WORK/dig_tx_system/o_dig_tx_system_done
+
+  Ref  Port       Ref:/WORK/dig_tx_system/o_dig_tx_system_miso
+  Impl Port       Imp:/WORK/dig_tx_system/o_dig_tx_system_miso
+
+  Ref  Port       Ref:/WORK/dig_tx_system/o_dig_tx_system_miso_ena
+  Impl Port       Imp:/WORK/dig_tx_system/o_dig_tx_system_miso_ena
+
+  Ref  Port       Ref:/WORK/dig_tx_system/o_dig_tx_system_output_valid
+  Impl Port       Imp:/WORK/dig_tx_system/o_dig_tx_system_output_valid
+
+  Ref  Port       Ref:/WORK/dig_tx_system/o_dig_tx_system_regfile_valid
+  Impl Port       Imp:/WORK/dig_tx_system/o_dig_tx_system_regfile_valid
+
+ [BBNet: multiply-driven net
+  BBPin: black-box pin
+  Cut:   cut-point
+  DFF:   non-constant DFF register
+  DFF0:  constant 0 DFF register
+  DFF1:  constant 1 DFF register
+  DFFX:  constant X DFF register
+  DFF0X: constrained 0X DFF register
+  DFF1X: constrained 1X DFF register
+  LAT:   non-constant latch register
+  LAT0:  constant 0 latch register
+  LAT1:  constant 1 latch register
+  LATX:  constant X latch register
+  LAT0X: constrained 0X latch register
+  LAT1X: constrained 1X latch register
+  LATCG: clock-gating latch register
+  TLA:   transparent latch register
+  TLA0X: transparent constrained 0X latch register
+  TLA1X: transparent constrained 1X latch register
+  Loop:  cycle break point
+  Port:  primary (top-level) port
+  Und:   undriven signal cut-point
+  Unk:   unknown signal cut-point]
+
+1
