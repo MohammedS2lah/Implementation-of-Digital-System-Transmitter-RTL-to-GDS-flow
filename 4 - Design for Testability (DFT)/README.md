@@ -57,4 +57,38 @@ DFT Compiler works seamlessly with Design Compiler to preserve timing constraint
 | `Post-DFT SDF & Timing Reports` | Timing data for STA validation on scan-enabled paths                        |
 
 
+---
 
+---
+
+# RTL with DFT Insertion 
+
+
+## RTL code of MUX2to1
+
+![image](https://github.com/user-attachments/assets/6db77298-6688-4294-8ea7-ecfe8db6113b)
+
+
+---
+
+## RTL code of Top module with DFT interface (scan clock, scan reset, test mode, scan input (SI), scan enable (SE) and scan output (SO)) 
+
+![image](https://github.com/user-attachments/assets/d96b1951-20ea-4553-9b7f-64e3c16e7e9c)
+
+
+---
+
+
+## DFT internal signals
+
+
+![image](https://github.com/user-attachments/assets/36772569-71a9-456e-a8e9-600f039e5680)
+
+
+---
+
+
+## Top module with Clocks and reset MUXed
+
+
+![image](https://github.com/user-attachments/assets/343b8a1f-d548-4981-aaa2-8f6efc6e5ce5)
