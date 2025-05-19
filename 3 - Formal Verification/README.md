@@ -1,4 +1,4 @@
-# 🧪 Formal Verification
+# Formal Verification
 
 Formal verification is a crucial validation step performed immediately after synthesis to ensure that the design's functionality has not been altered during the transformation from RTL to gate-level netlist.
 
