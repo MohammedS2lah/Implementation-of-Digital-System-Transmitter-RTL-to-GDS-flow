@@ -1,0 +1,724 @@
+In mode: all_dft...
+  Pre-DFT DRC enabled
+
+Information: Starting test design rule checking. (TEST-222)
+  Loading test protocol
+  ...basic checks...
+  ...basic sequential cell checks...
+  	...checking for scan equivalents...
+  ...checking vector rules...
+  ...checking pre-dft rules...
+
+-----------------------------------------------------------------
+Begin Modeling violations...
+
+Warning: Cell u_dig_tx_sys_clock_gating/enable_latch_reg (LATCHX1_LVT) is not scannable. (TEST-126)
+Information: Cells with this violation : u_dig_tx_spi_clock_gating/enable_latch_reg, u_dig_tx_sys_clock_gating/enable_latch_reg. (TEST-283)
+
+Modeling violations completed...
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+Begin Pre-DFT violations...
+
+ Warning: Set input SETB of DFF u_spi_slave/csn_d_reg was not controlled. (D2-1)
+ Warning: Set input SETB of DFF u_spi_slave/state_tx_reg[1] was not controlled. (D2-2)
+ Warning: Set input SETB of DFF u_spi_slave/state_reg_reg[1] was not controlled. (D2-3)
+ Warning: Set input SETB of DFF u_dig_tx_pulse_delayed/o_dix_pulse_d0_reg was not controlled. (D2-4)
+ Warning: Set input SETB of DFF u_dig_tx_asyn_fifo_read/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[3] was not controlled. (D2-5)
+ Warning: Set input SETB of DFF u_dig_tx_asyn_fifo_read/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[2] was not controlled. (D2-6)
+ Warning: Set input SETB of DFF u_dig_tx_asyn_fifo_read/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[1] was not controlled. (D2-7)
+ Warning: Set input SETB of DFF u_dig_tx_asyn_fifo_read/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[0] was not controlled. (D2-8)
+ Warning: Set input SETB of DFF u_dig_tx_asyn_fifo_read/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[3] was not controlled. (D2-9)
+ Warning: Set input SETB of DFF u_dig_tx_asyn_fifo_read/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[2] was not controlled. (D2-10)
+ Warning: Set input SETB of DFF u_dig_tx_asyn_fifo_read/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[1] was not controlled. (D2-11)
+ Warning: Set input SETB of DFF u_dig_tx_asyn_fifo_read/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[0] was not controlled. (D2-12)
+ Warning: Set input SETB of DFF u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_empty_reg was not controlled. (D2-13)
+ Warning: Set input SETB of DFF u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[2] was not controlled. (D2-14)
+ Warning: Set input SETB of DFF u_dig_tx_asyn_fifo_write/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[0] was not controlled. (D2-15)
+ Warning: Set input SETB of DFF u_dig_tx_asyn_fifo_write/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[1] was not controlled. (D2-16)
+ Warning: Set input SETB of DFF u_dig_tx_asyn_fifo_write/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[2] was not controlled. (D2-17)
+ Warning: Set input SETB of DFF u_dig_tx_asyn_fifo_write/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[2] was not controlled. (D2-18)
+ Warning: Set input SETB of DFF u_dig_tx_asyn_fifo_write/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[1] was not controlled. (D2-19)
+ Warning: Set input SETB of DFF u_dig_tx_asyn_fifo_write/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[0] was not controlled. (D2-20)
+ Warning: Set input SETB of DFF u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_empty_reg was not controlled. (D2-21)
+ Warning: Reset input RSTB of DFF u_spi_slave/state_tx_reg[2] was not controlled. (D3-1)
+ Warning: Reset input RSTB of DFF u_spi_slave/state_tx_reg[0] was not controlled. (D3-2)
+ Warning: Reset input RSTB of DFF u_spi_slave/flag_reg_reg was not controlled. (D3-3)
+ Warning: Reset input RSTB of DFF u_spi_slave/status_reg_reg[1] was not controlled. (D3-4)
+ Warning: Reset input RSTB of DFF u_spi_slave/status_reg_reg[2] was not controlled. (D3-5)
+ Warning: Reset input RSTB of DFF u_spi_slave/status_reg_reg[3] was not controlled. (D3-6)
+ Warning: Reset input RSTB of DFF u_spi_slave/status_reg_reg[4] was not controlled. (D3-7)
+ Warning: Reset input RSTB of DFF u_spi_slave/status_reg_reg[5] was not controlled. (D3-8)
+ Warning: Reset input RSTB of DFF u_spi_slave/status_reg_reg[6] was not controlled. (D3-9)
+ Warning: Reset input RSTB of DFF u_spi_slave/status_reg_reg[7] was not controlled. (D3-10)
+ Warning: Reset input RSTB of DFF u_spi_slave/status_reg_reg[8] was not controlled. (D3-11)
+ Warning: Reset input RSTB of DFF u_spi_slave/status_reg_reg[9] was not controlled. (D3-12)
+ Warning: Reset input RSTB of DFF u_spi_slave/status_reg_reg[10] was not controlled. (D3-13)
+ Warning: Reset input RSTB of DFF u_spi_slave/status_reg_reg[11] was not controlled. (D3-14)
+ Warning: Reset input RSTB of DFF u_spi_slave/status_reg_reg[12] was not controlled. (D3-15)
+ Warning: Reset input RSTB of DFF u_spi_slave/status_reg_reg[13] was not controlled. (D3-16)
+ Warning: Reset input RSTB of DFF u_spi_slave/status_reg_reg[14] was not controlled. (D3-17)
+ Warning: Reset input RSTB of DFF u_spi_slave/status_reg_reg[15] was not controlled. (D3-18)
+ Warning: Reset input RSTB of DFF u_spi_slave/mosi_reg_reg[0] was not controlled. (D3-19)
+ Warning: Reset input RSTB of DFF u_spi_slave/mosi_reg_reg[2] was not controlled. (D3-20)
+ Warning: Reset input RSTB of DFF u_spi_slave/miso_rde_strt_reg was not controlled. (D3-21)
+ Warning: Reset input RSTB of DFF u_spi_slave/miso_reg_reg[1] was not controlled. (D3-22)
+ Warning: Reset input RSTB of DFF u_spi_slave/miso_reg_reg[2] was not controlled. (D3-23)
+ Warning: Reset input RSTB of DFF u_spi_slave/miso_reg_reg[3] was not controlled. (D3-24)
+ Warning: Reset input RSTB of DFF u_spi_slave/miso_reg_reg[4] was not controlled. (D3-25)
+ Warning: Reset input RSTB of DFF u_spi_slave/miso_reg_reg[5] was not controlled. (D3-26)
+ Warning: Reset input RSTB of DFF u_spi_slave/miso_reg_reg[6] was not controlled. (D3-27)
+ Warning: Reset input RSTB of DFF u_spi_slave/miso_reg_reg[7] was not controlled. (D3-28)
+ Warning: Reset input RSTB of DFF u_spi_slave/rf_add_reg_reg[0] was not controlled. (D3-29)
+ Warning: Reset input RSTB of DFF u_spi_slave/rf_add_reg_reg[1] was not controlled. (D3-30)
+ Warning: Reset input RSTB of DFF u_spi_slave/rf_add_reg_reg[2] was not controlled. (D3-31)
+ Warning: Reset input RSTB of DFF u_spi_slave/rf_add_reg_reg[3] was not controlled. (D3-32)
+ Warning: Reset input RSTB of DFF u_spi_slave/rf_add_reg_reg[4] was not controlled. (D3-33)
+ Warning: Reset input RSTB of DFF u_spi_slave/rf_add_reg_reg[5] was not controlled. (D3-34)
+ Warning: Reset input RSTB of DFF u_spi_slave/rf_add_reg_reg[6] was not controlled. (D3-35)
+ Warning: Reset input RSTB of DFF u_spi_slave/rf_add_reg_reg[7] was not controlled. (D3-36)
+ Warning: Reset input RSTB of DFF u_spi_slave/bit_cnt_reg_reg[0] was not controlled. (D3-37)
+ Warning: Reset input RSTB of DFF u_spi_slave/bit_cnt_reg_reg[1] was not controlled. (D3-38)
+ Warning: Reset input RSTB of DFF u_spi_slave/state_reg_reg[0] was not controlled. (D3-39)
+ Warning: Reset input RSTB of DFF u_spi_slave/mosi_reg_reg[5] was not controlled. (D3-40)
+ Warning: Reset input RSTB of DFF u_spi_slave/mosi_reg_reg[3] was not controlled. (D3-41)
+ Warning: Reset input RSTB of DFF u_spi_slave/mosi_reg_reg[7] was not controlled. (D3-42)
+ Warning: Reset input RSTB of DFF u_spi_slave/mosi_reg_reg[1] was not controlled. (D3-43)
+ Warning: Reset input RSTB of DFF u_spi_slave/mosi_reg_reg[4] was not controlled. (D3-44)
+ Warning: Reset input RSTB of DFF u_spi_slave/mosi_reg_reg[6] was not controlled. (D3-45)
+ Warning: Reset input RSTB of DFF u_spi_slave/state_reg_reg[2] was not controlled. (D3-46)
+ Warning: Reset input RSTB of DFF u_spi_slave/bit_cnt_reg_reg[2] was not controlled. (D3-47)
+ Warning: Reset input RSTB of DFF u_dig_tx_pulse_delayed/reg_delayed_reg was not controlled. (D3-48)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[0][8] was not controlled. (D3-49)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[0][3] was not controlled. (D3-50)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[0][2] was not controlled. (D3-51)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[0][1] was not controlled. (D3-52)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[0][0] was not controlled. (D3-53)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[1][8] was not controlled. (D3-54)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[1][7] was not controlled. (D3-55)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[1][6] was not controlled. (D3-56)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[1][5] was not controlled. (D3-57)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[1][4] was not controlled. (D3-58)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[1][3] was not controlled. (D3-59)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[1][2] was not controlled. (D3-60)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[1][1] was not controlled. (D3-61)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[1][0] was not controlled. (D3-62)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[2][8] was not controlled. (D3-63)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[2][7] was not controlled. (D3-64)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[2][6] was not controlled. (D3-65)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[2][5] was not controlled. (D3-66)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[2][4] was not controlled. (D3-67)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[2][3] was not controlled. (D3-68)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[2][2] was not controlled. (D3-69)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[2][1] was not controlled. (D3-70)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[2][0] was not controlled. (D3-71)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[3][8] was not controlled. (D3-72)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[3][7] was not controlled. (D3-73)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[3][6] was not controlled. (D3-74)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[3][5] was not controlled. (D3-75)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[3][4] was not controlled. (D3-76)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[3][3] was not controlled. (D3-77)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[3][2] was not controlled. (D3-78)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[3][1] was not controlled. (D3-79)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[3][0] was not controlled. (D3-80)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[4][8] was not controlled. (D3-81)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[1] was not controlled. (D3-82)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[2] was not controlled. (D3-83)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[3] was not controlled. (D3-84)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[4] was not controlled. (D3-85)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[5] was not controlled. (D3-86)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[6] was not controlled. (D3-87)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[7] was not controlled. (D3-88)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[8] was not controlled. (D3-89)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[9] was not controlled. (D3-90)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[10] was not controlled. (D3-91)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[11] was not controlled. (D3-92)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[12] was not controlled. (D3-93)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[13] was not controlled. (D3-94)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[14] was not controlled. (D3-95)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[15] was not controlled. (D3-96)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[16] was not controlled. (D3-97)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[17] was not controlled. (D3-98)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[18] was not controlled. (D3-99)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[19] was not controlled. (D3-100)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[20] was not controlled. (D3-101)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[21] was not controlled. (D3-102)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[22] was not controlled. (D3-103)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[23] was not controlled. (D3-104)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[0] was not controlled. (D3-105)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_sys_tx_done_reg was not controlled. (D3-106)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[4][7] was not controlled. (D3-107)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[31] was not controlled. (D3-108)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[4][6] was not controlled. (D3-109)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[30] was not controlled. (D3-110)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[4][5] was not controlled. (D3-111)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[29] was not controlled. (D3-112)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[4][4] was not controlled. (D3-113)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[28] was not controlled. (D3-114)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[4][3] was not controlled. (D3-115)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[27] was not controlled. (D3-116)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[4][2] was not controlled. (D3-117)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[26] was not controlled. (D3-118)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[4][1] was not controlled. (D3-119)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[25] was not controlled. (D3-120)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/reg_file_reg[4][0] was not controlled. (D3-121)
+ Warning: Reset input RSTB of DFF u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[24] was not controlled. (D3-122)
+ Warning: Reset input RSTB of DFF u_dig_tx_control_unit/stall_counter_reg[0] was not controlled. (D3-123)
+ Warning: Reset input RSTB of DFF u_dig_tx_control_unit/stall_counter_reg[2] was not controlled. (D3-124)
+ Warning: Reset input RSTB of DFF u_dig_tx_control_unit/current_state_reg[0] was not controlled. (D3-125)
+ Warning: Reset input RSTB of DFF u_dig_tx_control_unit/current_state_reg[2] was not controlled. (D3-126)
+ Warning: Reset input RSTB of DFF u_dig_tx_control_unit/current_state_reg[1] was not controlled. (D3-127)
+ Warning: Reset input RSTB of DFF u_dig_tx_control_unit/stall_counter_reg[1] was not controlled. (D3-128)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/clock_freq_en_reg was not controlled. (D3-129)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/counter_send_shr_crc_reg[0] was not controlled. (D3-130)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/o_dig_tx_serializer_shr_crc_done_reg was not controlled. (D3-131)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/counter_send_shr_crc_reg[1] was not controlled. (D3-132)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/counter_send_shr_crc_reg[2] was not controlled. (D3-133)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/counter_send_shr_crc_reg[3] was not controlled. (D3-134)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/counter_send_shr_crc_reg[4] was not controlled. (D3-135)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/o_dig_tx_serializer_crc_in_reg was not controlled. (D3-136)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/o_dig_tx_serializer_phy_out_reg was not controlled. (D3-137)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/counter_send_data_crc_reg[0] was not controlled. (D3-138)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/o_dig_tx_serializer_data_crc_done_reg was not controlled. (D3-139)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/counter_send_data_crc_reg[3] was not controlled. (D3-140)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/counter_send_data_crc_reg[4] was not controlled. (D3-141)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/counter_send_crc_phy_reg[2] was not controlled. (D3-142)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/o_dig_tx_serializer_crc_phy_done_reg was not controlled. (D3-143)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/counter_send_crc_phy_reg[3] was not controlled. (D3-144)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/counter_send_crc_phy_reg[1] was not controlled. (D3-145)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/counter_send_data_crc_reg[2] was not controlled. (D3-146)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/counter_send_data_crc_reg[1] was not controlled. (D3-147)
+ Warning: Reset input RSTB of DFF u_dig_tx_serializer/counter_send_crc_phy_reg[0] was not controlled. (D3-148)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/counter_reg[0] was not controlled. (D3-149)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/o_dig_tx_crc_valid_reg was not controlled. (D3-150)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/counter_reg[1] was not controlled. (D3-151)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/counter_reg[2] was not controlled. (D3-152)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/counter_reg[3] was not controlled. (D3-153)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/counter_reg[4] was not controlled. (D3-154)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/counter_reg[5] was not controlled. (D3-155)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/counter_reg[6] was not controlled. (D3-156)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/remainder_d_reg[0] was not controlled. (D3-157)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/remainder_d_reg[15] was not controlled. (D3-158)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/remainder_d_reg[14] was not controlled. (D3-159)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/remainder_d_reg[13] was not controlled. (D3-160)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/remainder_d_reg[12] was not controlled. (D3-161)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/remainder_d_reg[11] was not controlled. (D3-162)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/remainder_d_reg[10] was not controlled. (D3-163)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/remainder_d_reg[9] was not controlled. (D3-164)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/remainder_d_reg[8] was not controlled. (D3-165)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/remainder_d_reg[7] was not controlled. (D3-166)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/remainder_d_reg[6] was not controlled. (D3-167)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/remainder_d_reg[5] was not controlled. (D3-168)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/remainder_d_reg[4] was not controlled. (D3-169)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/remainder_d_reg[3] was not controlled. (D3-170)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/remainder_d_reg[2] was not controlled. (D3-171)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/remainder_d_reg[1] was not controlled. (D3-172)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/o_dig_tx_crc_data_out_reg[15] was not controlled. (D3-173)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/o_dig_tx_crc_data_out_reg[14] was not controlled. (D3-174)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/o_dig_tx_crc_data_out_reg[13] was not controlled. (D3-175)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/o_dig_tx_crc_data_out_reg[12] was not controlled. (D3-176)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/o_dig_tx_crc_data_out_reg[11] was not controlled. (D3-177)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/o_dig_tx_crc_data_out_reg[10] was not controlled. (D3-178)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/o_dig_tx_crc_data_out_reg[9] was not controlled. (D3-179)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/o_dig_tx_crc_data_out_reg[8] was not controlled. (D3-180)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/o_dig_tx_crc_data_out_reg[7] was not controlled. (D3-181)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/o_dig_tx_crc_data_out_reg[6] was not controlled. (D3-182)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/o_dig_tx_crc_data_out_reg[5] was not controlled. (D3-183)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/o_dig_tx_crc_data_out_reg[4] was not controlled. (D3-184)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/o_dig_tx_crc_data_out_reg[3] was not controlled. (D3-185)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/o_dig_tx_crc_data_out_reg[2] was not controlled. (D3-186)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/o_dig_tx_crc_data_out_reg[1] was not controlled. (D3-187)
+ Warning: Reset input RSTB of DFF u_dig_tx_crc/o_dig_tx_crc_data_out_reg[0] was not controlled. (D3-188)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/sync_wptr/metastable_flop_reg[3] was not controlled. (D3-189)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/sync_wptr/metastable_flop_reg[2] was not controlled. (D3-190)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/sync_wptr/metastable_flop_reg[1] was not controlled. (D3-191)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/sync_wptr/metastable_flop_reg[0] was not controlled. (D3-192)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/sync_rptr/metastable_flop_reg[3] was not controlled. (D3-193)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/sync_rptr/metastable_flop_reg[2] was not controlled. (D3-194)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/sync_rptr/metastable_flop_reg[1] was not controlled. (D3-195)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/sync_rptr/metastable_flop_reg[0] was not controlled. (D3-196)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[0] was not controlled. (D3-197)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_full_reg was not controlled. (D3-198)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[3] was not controlled. (D3-199)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[2] was not controlled. (D3-200)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[1] was not controlled. (D3-201)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[0] was not controlled. (D3-202)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[1] was not controlled. (D3-203)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[2] was not controlled. (D3-204)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[3] was not controlled. (D3-205)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[3] was not controlled. (D3-206)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[3] was not controlled. (D3-207)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[2] was not controlled. (D3-208)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[1] was not controlled. (D3-209)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[0] was not controlled. (D3-210)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[0] was not controlled. (D3-211)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[1] was not controlled. (D3-212)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/sync_wptr/metastable_flop_reg[2] was not controlled. (D3-213)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/sync_wptr/metastable_flop_reg[1] was not controlled. (D3-214)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/sync_wptr/metastable_flop_reg[0] was not controlled. (D3-215)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/sync_rptr/metastable_flop_reg[2] was not controlled. (D3-216)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/sync_rptr/metastable_flop_reg[1] was not controlled. (D3-217)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/sync_rptr/metastable_flop_reg[0] was not controlled. (D3-218)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[0] was not controlled. (D3-219)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_full_reg was not controlled. (D3-220)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[1] was not controlled. (D3-221)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[2] was not controlled. (D3-222)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[2] was not controlled. (D3-223)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[1] was not controlled. (D3-224)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[0] was not controlled. (D3-225)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[0] was not controlled. (D3-226)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[2] was not controlled. (D3-227)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[1] was not controlled. (D3-228)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[0] was not controlled. (D3-229)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[1] was not controlled. (D3-230)
+ Warning: Reset input RSTB of DFF u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[2] was not controlled. (D3-231)
+ Warning: Clock scan_clk can capture new data on TE input CLK of DFF u_spi_slave/state_tx_reg[2]. (D14-1)
+         Source of violation: input CLK of DFF u_spi_slave/state_reg_reg[0].
+ Warning: Clock scan_clk can capture new data on TE input CLK of DFF u_spi_slave/state_tx_reg[0]. (D14-2)
+         Source of violation: input CLK of DFF u_spi_slave/state_reg_reg[1].
+ Warning: Clock scan_clk can capture new data on TE input CLK of DFF u_spi_slave/miso_rde_strt_reg. (D14-3)
+         Source of violation: input CLK of DFF u_spi_slave/bit_cnt_reg_reg[2].
+ Warning: Clock scan_clk can capture new data on TE input CLK of DFF u_spi_slave/miso_reg_reg[1]. (D14-4)
+         Source of violation: input CLK of DFF u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][0].
+ Warning: Clock scan_clk can capture new data on TE input CLK of DFF u_spi_slave/miso_reg_reg[2]. (D14-5)
+         Source of violation: input CLK of DFF u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][1].
+ Warning: Clock scan_clk can capture new data on TE input CLK of DFF u_spi_slave/miso_reg_reg[3]. (D14-6)
+         Source of violation: input CLK of DFF u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][2].
+ Warning: Clock scan_clk can capture new data on TE input CLK of DFF u_spi_slave/miso_reg_reg[4]. (D14-7)
+         Source of violation: input CLK of DFF u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][3].
+ Warning: Clock scan_clk can capture new data on TE input CLK of DFF u_spi_slave/miso_reg_reg[5]. (D14-8)
+         Source of violation: input CLK of DFF u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][4].
+ Warning: Clock scan_clk can capture new data on TE input CLK of DFF u_spi_slave/miso_reg_reg[6]. (D14-9)
+         Source of violation: input CLK of DFF u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][5].
+ Warning: Clock scan_clk can capture new data on TE input CLK of DFF u_spi_slave/miso_reg_reg[7]. (D14-10)
+         Source of violation: input CLK of DFF u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][6].
+ Warning: Clock scan_clk can capture new data on TE input CLK of DFF u_spi_slave/state_tx_reg[1]. (D14-11)
+         Source of violation: input CLK of DFF u_spi_slave/state_reg_reg[0].
+
+Pre-DFT violations completed...
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+Begin Other violations...
+
+Warning: Cell u_dig_tx_sys_clock_gating/enable_latch_reg has constant 1 value. (TEST-505)
+Information: Cells with this violation : u_dig_tx_spi_clock_gating/enable_latch_reg, u_dig_tx_sys_clock_gating/enable_latch_reg. (TEST-283)
+
+Other violations completed...
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+  DRC Report
+
+  Total violations: 267
+
+-----------------------------------------------------------------
+
+2 MODELING VIOLATIONS
+     2 Cell is not scannable violations (TEST-126)
+
+263 PRE-DFT VIOLATIONS
+    21 DFF set/reset line not controlled violations (D2)
+   231 DFF set/reset line not controlled violations (D3)
+    11 Data path affected by clock captured by clock in trailing edge clock_port violations (D14)
+
+2 OTHER VIOLATIONS
+     2 Cell is constant 1 violations (TEST-505)
+
+
+Warning: Violations occurred during test design rule checking. (TEST-124)
+
+-----------------------------------------------------------------
+  Sequential Cell Report
+
+  254 out of 378 sequential cells have violations
+
+-----------------------------------------------------------------
+
+SEQUENTIAL CELLS WITH VIOLATIONS
+      * 252 cells have test design rule violations
+         u_spi_slave/csn_d_reg
+         u_spi_slave/state_tx_reg[2]
+         u_spi_slave/state_tx_reg[0]
+         u_spi_slave/flag_reg_reg
+         u_spi_slave/status_reg_reg[1]
+         u_spi_slave/status_reg_reg[2]
+         u_spi_slave/status_reg_reg[3]
+         u_spi_slave/status_reg_reg[4]
+         u_spi_slave/status_reg_reg[5]
+         u_spi_slave/status_reg_reg[6]
+         u_spi_slave/status_reg_reg[7]
+         u_spi_slave/status_reg_reg[8]
+         u_spi_slave/status_reg_reg[9]
+         u_spi_slave/status_reg_reg[10]
+         u_spi_slave/status_reg_reg[11]
+         u_spi_slave/status_reg_reg[12]
+         u_spi_slave/status_reg_reg[13]
+         u_spi_slave/status_reg_reg[14]
+         u_spi_slave/status_reg_reg[15]
+         u_spi_slave/mosi_reg_reg[0]
+         u_spi_slave/mosi_reg_reg[2]
+         u_spi_slave/miso_rde_strt_reg
+         u_spi_slave/miso_reg_reg[1]
+         u_spi_slave/miso_reg_reg[2]
+         u_spi_slave/miso_reg_reg[3]
+         u_spi_slave/miso_reg_reg[4]
+         u_spi_slave/miso_reg_reg[5]
+         u_spi_slave/miso_reg_reg[6]
+         u_spi_slave/miso_reg_reg[7]
+         u_spi_slave/rf_add_reg_reg[0]
+         u_spi_slave/rf_add_reg_reg[1]
+         u_spi_slave/rf_add_reg_reg[2]
+         u_spi_slave/rf_add_reg_reg[3]
+         u_spi_slave/rf_add_reg_reg[4]
+         u_spi_slave/rf_add_reg_reg[5]
+         u_spi_slave/rf_add_reg_reg[6]
+         u_spi_slave/rf_add_reg_reg[7]
+         u_spi_slave/bit_cnt_reg_reg[0]
+         u_spi_slave/state_tx_reg[1]
+         u_spi_slave/bit_cnt_reg_reg[1]
+         u_spi_slave/state_reg_reg[0]
+         u_spi_slave/mosi_reg_reg[5]
+         u_spi_slave/mosi_reg_reg[3]
+         u_spi_slave/mosi_reg_reg[7]
+         u_spi_slave/mosi_reg_reg[1]
+         u_spi_slave/state_reg_reg[1]
+         u_spi_slave/mosi_reg_reg[4]
+         u_spi_slave/mosi_reg_reg[6]
+         u_spi_slave/state_reg_reg[2]
+         u_spi_slave/bit_cnt_reg_reg[2]
+         u_dig_tx_pulse_delayed/o_dix_pulse_d0_reg
+         u_dig_tx_pulse_delayed/reg_delayed_reg
+         u_dig_tx_reg_file/reg_file_reg[0][8]
+         u_dig_tx_reg_file/reg_file_reg[0][3]
+         u_dig_tx_reg_file/reg_file_reg[0][2]
+         u_dig_tx_reg_file/reg_file_reg[0][1]
+         u_dig_tx_reg_file/reg_file_reg[0][0]
+         u_dig_tx_reg_file/reg_file_reg[1][8]
+         u_dig_tx_reg_file/reg_file_reg[1][7]
+         u_dig_tx_reg_file/reg_file_reg[1][6]
+         u_dig_tx_reg_file/reg_file_reg[1][5]
+         u_dig_tx_reg_file/reg_file_reg[1][4]
+         u_dig_tx_reg_file/reg_file_reg[1][3]
+         u_dig_tx_reg_file/reg_file_reg[1][2]
+         u_dig_tx_reg_file/reg_file_reg[1][1]
+         u_dig_tx_reg_file/reg_file_reg[1][0]
+         u_dig_tx_reg_file/reg_file_reg[2][8]
+         u_dig_tx_reg_file/reg_file_reg[2][7]
+         u_dig_tx_reg_file/reg_file_reg[2][6]
+         u_dig_tx_reg_file/reg_file_reg[2][5]
+         u_dig_tx_reg_file/reg_file_reg[2][4]
+         u_dig_tx_reg_file/reg_file_reg[2][3]
+         u_dig_tx_reg_file/reg_file_reg[2][2]
+         u_dig_tx_reg_file/reg_file_reg[2][1]
+         u_dig_tx_reg_file/reg_file_reg[2][0]
+         u_dig_tx_reg_file/reg_file_reg[3][8]
+         u_dig_tx_reg_file/reg_file_reg[3][7]
+         u_dig_tx_reg_file/reg_file_reg[3][6]
+         u_dig_tx_reg_file/reg_file_reg[3][5]
+         u_dig_tx_reg_file/reg_file_reg[3][4]
+         u_dig_tx_reg_file/reg_file_reg[3][3]
+         u_dig_tx_reg_file/reg_file_reg[3][2]
+         u_dig_tx_reg_file/reg_file_reg[3][1]
+         u_dig_tx_reg_file/reg_file_reg[3][0]
+         u_dig_tx_reg_file/reg_file_reg[4][8]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[1]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[2]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[3]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[4]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[5]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[6]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[7]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[8]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[9]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[10]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[11]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[12]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[13]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[14]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[15]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[16]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[17]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[18]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[19]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[20]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[21]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[22]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[23]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[0]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_sys_tx_done_reg
+         u_dig_tx_reg_file/reg_file_reg[4][7]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[31]
+         u_dig_tx_reg_file/reg_file_reg[4][6]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[30]
+         u_dig_tx_reg_file/reg_file_reg[4][5]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[29]
+         u_dig_tx_reg_file/reg_file_reg[4][4]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[28]
+         u_dig_tx_reg_file/reg_file_reg[4][3]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[27]
+         u_dig_tx_reg_file/reg_file_reg[4][2]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[26]
+         u_dig_tx_reg_file/reg_file_reg[4][1]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[25]
+         u_dig_tx_reg_file/reg_file_reg[4][0]
+         u_dig_tx_reg_file/o_dig_tx_reg_file_data_out_reg[24]
+         u_dig_tx_control_unit/stall_counter_reg[0]
+         u_dig_tx_control_unit/stall_counter_reg[2]
+         u_dig_tx_control_unit/current_state_reg[0]
+         u_dig_tx_control_unit/current_state_reg[2]
+         u_dig_tx_control_unit/current_state_reg[1]
+         u_dig_tx_control_unit/stall_counter_reg[1]
+         u_dig_tx_serializer/clock_freq_en_reg
+         u_dig_tx_serializer/counter_send_shr_crc_reg[0]
+         u_dig_tx_serializer/o_dig_tx_serializer_shr_crc_done_reg
+         u_dig_tx_serializer/counter_send_shr_crc_reg[1]
+         u_dig_tx_serializer/counter_send_shr_crc_reg[2]
+         u_dig_tx_serializer/counter_send_shr_crc_reg[3]
+         u_dig_tx_serializer/counter_send_shr_crc_reg[4]
+         u_dig_tx_serializer/o_dig_tx_serializer_crc_in_reg
+         u_dig_tx_serializer/o_dig_tx_serializer_phy_out_reg
+         u_dig_tx_serializer/counter_send_data_crc_reg[0]
+         u_dig_tx_serializer/o_dig_tx_serializer_data_crc_done_reg
+         u_dig_tx_serializer/counter_send_data_crc_reg[3]
+         u_dig_tx_serializer/counter_send_data_crc_reg[4]
+         u_dig_tx_serializer/counter_send_crc_phy_reg[2]
+         u_dig_tx_serializer/o_dig_tx_serializer_crc_phy_done_reg
+         u_dig_tx_serializer/counter_send_crc_phy_reg[3]
+         u_dig_tx_serializer/counter_send_crc_phy_reg[1]
+         u_dig_tx_serializer/counter_send_data_crc_reg[2]
+         u_dig_tx_serializer/counter_send_data_crc_reg[1]
+         u_dig_tx_serializer/counter_send_crc_phy_reg[0]
+         u_dig_tx_crc/counter_reg[0]
+         u_dig_tx_crc/o_dig_tx_crc_valid_reg
+         u_dig_tx_crc/counter_reg[1]
+         u_dig_tx_crc/counter_reg[2]
+         u_dig_tx_crc/counter_reg[3]
+         u_dig_tx_crc/counter_reg[4]
+         u_dig_tx_crc/counter_reg[5]
+         u_dig_tx_crc/counter_reg[6]
+         u_dig_tx_crc/remainder_d_reg[0]
+         u_dig_tx_crc/remainder_d_reg[15]
+         u_dig_tx_crc/remainder_d_reg[14]
+         u_dig_tx_crc/remainder_d_reg[13]
+         u_dig_tx_crc/remainder_d_reg[12]
+         u_dig_tx_crc/remainder_d_reg[11]
+         u_dig_tx_crc/remainder_d_reg[10]
+         u_dig_tx_crc/remainder_d_reg[9]
+         u_dig_tx_crc/remainder_d_reg[8]
+         u_dig_tx_crc/remainder_d_reg[7]
+         u_dig_tx_crc/remainder_d_reg[6]
+         u_dig_tx_crc/remainder_d_reg[5]
+         u_dig_tx_crc/remainder_d_reg[4]
+         u_dig_tx_crc/remainder_d_reg[3]
+         u_dig_tx_crc/remainder_d_reg[2]
+         u_dig_tx_crc/remainder_d_reg[1]
+         u_dig_tx_crc/o_dig_tx_crc_data_out_reg[15]
+         u_dig_tx_crc/o_dig_tx_crc_data_out_reg[14]
+         u_dig_tx_crc/o_dig_tx_crc_data_out_reg[13]
+         u_dig_tx_crc/o_dig_tx_crc_data_out_reg[12]
+         u_dig_tx_crc/o_dig_tx_crc_data_out_reg[11]
+         u_dig_tx_crc/o_dig_tx_crc_data_out_reg[10]
+         u_dig_tx_crc/o_dig_tx_crc_data_out_reg[9]
+         u_dig_tx_crc/o_dig_tx_crc_data_out_reg[8]
+         u_dig_tx_crc/o_dig_tx_crc_data_out_reg[7]
+         u_dig_tx_crc/o_dig_tx_crc_data_out_reg[6]
+         u_dig_tx_crc/o_dig_tx_crc_data_out_reg[5]
+         u_dig_tx_crc/o_dig_tx_crc_data_out_reg[4]
+         u_dig_tx_crc/o_dig_tx_crc_data_out_reg[3]
+         u_dig_tx_crc/o_dig_tx_crc_data_out_reg[2]
+         u_dig_tx_crc/o_dig_tx_crc_data_out_reg[1]
+         u_dig_tx_crc/o_dig_tx_crc_data_out_reg[0]
+         u_dig_tx_asyn_fifo_read/sync_wptr/metastable_flop_reg[3]
+         u_dig_tx_asyn_fifo_read/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[3]
+         u_dig_tx_asyn_fifo_read/sync_wptr/metastable_flop_reg[2]
+         u_dig_tx_asyn_fifo_read/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[2]
+         u_dig_tx_asyn_fifo_read/sync_wptr/metastable_flop_reg[1]
+         u_dig_tx_asyn_fifo_read/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[1]
+         u_dig_tx_asyn_fifo_read/sync_wptr/metastable_flop_reg[0]
+         u_dig_tx_asyn_fifo_read/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[0]
+         u_dig_tx_asyn_fifo_read/sync_rptr/metastable_flop_reg[3]
+         u_dig_tx_asyn_fifo_read/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[3]
+         u_dig_tx_asyn_fifo_read/sync_rptr/metastable_flop_reg[2]
+         u_dig_tx_asyn_fifo_read/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[2]
+         u_dig_tx_asyn_fifo_read/sync_rptr/metastable_flop_reg[1]
+         u_dig_tx_asyn_fifo_read/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[1]
+         u_dig_tx_asyn_fifo_read/sync_rptr/metastable_flop_reg[0]
+         u_dig_tx_asyn_fifo_read/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[0]
+         u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[0]
+         u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_full_reg
+         u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[3]
+         u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[2]
+         u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[1]
+         u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[0]
+         u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[1]
+         u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[2]
+         u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[3]
+         u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_empty_reg
+         u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[3]
+         u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[3]
+         u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[2]
+         u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[1]
+         u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[0]
+         u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[2]
+         u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[0]
+         u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[1]
+         u_dig_tx_asyn_fifo_write/sync_wptr/metastable_flop_reg[2]
+         u_dig_tx_asyn_fifo_write/sync_wptr/metastable_flop_reg[1]
+         u_dig_tx_asyn_fifo_write/sync_wptr/metastable_flop_reg[0]
+         u_dig_tx_asyn_fifo_write/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[0]
+         u_dig_tx_asyn_fifo_write/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[1]
+         u_dig_tx_asyn_fifo_write/sync_wptr/o_dig_tx_fifo_synchronizer_d_out_reg[2]
+         u_dig_tx_asyn_fifo_write/sync_rptr/metastable_flop_reg[2]
+         u_dig_tx_asyn_fifo_write/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[2]
+         u_dig_tx_asyn_fifo_write/sync_rptr/metastable_flop_reg[1]
+         u_dig_tx_asyn_fifo_write/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[1]
+         u_dig_tx_asyn_fifo_write/sync_rptr/metastable_flop_reg[0]
+         u_dig_tx_asyn_fifo_write/sync_rptr/o_dig_tx_fifo_synchronizer_d_out_reg[0]
+         u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[0]
+         u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_full_reg
+         u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[1]
+         u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_b_wptr_reg[2]
+         u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[2]
+         u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[1]
+         u_dig_tx_asyn_fifo_write/wptr_h/o_dig_tx_fifo_wr_ptr_handler_g_wptr_reg[0]
+         u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[0]
+         u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_empty_reg
+         u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[2]
+         u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[1]
+         u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[0]
+         u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg[1]
+         u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_g_rptr_reg[2]
+      *   2 cells have constant 1 value
+         u_dig_tx_sys_clock_gating/enable_latch_reg
+         u_dig_tx_spi_clock_gating/enable_latch_reg
+SEQUENTIAL CELLS WITHOUT VIOLATIONS
+      * 124 cells are valid scan cells
+         u_dig_tx_rst_sync_spi/sync_flops_reg[0]
+         u_dig_tx_rst_sync_spi/sync_flops_reg[1]
+         u_dig_tx_rst_sync_sys/sync_flops_reg[0]
+         u_dig_tx_rst_sync_sys/sync_flops_reg[1]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][11]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][10]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][9]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][8]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][7]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][6]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][5]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][4]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][3]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][2]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][1]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[0][0]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][11]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][10]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][9]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][8]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][7]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][6]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][5]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][4]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][3]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][2]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][1]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[1][0]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][11]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][10]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][9]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][8]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][7]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][6]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][5]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][4]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][3]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][2]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][1]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[2][0]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][11]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][10]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][9]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][8]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][7]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][6]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][5]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][4]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][3]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][2]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][1]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[3][0]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][11]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][10]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][9]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][8]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][7]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][6]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][5]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][4]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][3]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][2]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][1]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[4][0]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][11]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][10]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][9]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][8]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][7]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][6]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][5]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][4]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][3]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][2]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][1]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[5][0]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][11]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][10]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][9]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][8]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][7]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][6]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][5]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][4]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][3]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][2]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][1]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[6][0]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][11]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][10]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][9]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][8]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][7]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][6]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][5]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][4]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][3]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][2]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][1]
+         u_dig_tx_asyn_fifo_read/fifom/fifo_reg[7][0]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[0][7]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[0][6]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[0][5]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[0][4]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[0][3]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[0][2]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[0][1]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[0][0]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][7]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][6]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][5]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][4]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][3]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][2]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][1]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[1][0]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[2][7]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[2][6]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[2][5]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[2][4]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[2][3]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[2][2]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[2][1]
+         u_dig_tx_asyn_fifo_write/fifom/fifo_reg[2][0]
+
+Information: Test design rule checking completed. (TEST-123)
+1

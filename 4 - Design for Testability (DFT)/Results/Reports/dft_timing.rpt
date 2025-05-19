@@ -1,0 +1,2680 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : dig_tx_system
+Version: O-2018.06-SP1
+Date   : Mon May 19 10:26:22 2025
+****************************************
+
+Operating Conditions: ss0p7v125c   Library: saed32hvt_ss0p7v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: i_dig_tx_system_csn
+              (input port clocked by spi_gated_clk)
+  Endpoint: o_dig_tx_system_miso_ena
+            (output port clocked by spi_gated_clk)
+  Path Group: INOUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock spi_gated_clk (rise edge)          0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.40       0.40 f
+  i_dig_tx_system_csn (in)                 0.01       0.41 f
+  u_spi_slave/i_csn (spi_slave)            0.00       0.41 f
+  u_spi_slave/U3/Y (OR2X1_LVT)             0.07       0.48 f
+  u_spi_slave/o_miso_ena (spi_slave)       0.00       0.48 f
+  o_dig_tx_system_miso_ena (out)           0.00       0.48 f
+  data arrival time                                   0.48
+
+  clock spi_gated_clk (rise edge)          2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  clock uncertainty                       -0.25       1.75
+  output external delay                   -0.28       1.47
+  data required time                                  1.47
+  -----------------------------------------------------------
+  data required time                                  1.47
+  data arrival time                                  -0.48
+  -----------------------------------------------------------
+  slack (MET)                                         0.98
+
+
+  Startpoint: SE (input port clocked by spi_gated_clk)
+  Endpoint: u_dig_tx_rst_sync_spi/sync_flops_reg_1_
+            (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: INREG
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  SE (in)                                                 0.04       0.44 r
+  u_dig_tx_rst_sync_spi/test_se (dig_tx_rst_sync_test_0)
+                                                          0.00       0.44 r
+  u_dig_tx_rst_sync_spi/sync_flops_reg_1_/SE (SDFFASX2_HVT)
+                                                          0.00       0.44 r
+  data arrival time                                                  0.44
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  u_dig_tx_rst_sync_spi/sync_flops_reg_1_/CLK (SDFFASX2_HVT)
+                                                          0.00       1.75 r
+  library setup time                                     -1.11       0.64
+  data required time                                                 0.64
+  --------------------------------------------------------------------------
+  data required time                                                 0.64
+  data arrival time                                                 -0.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.20
+
+
+  Startpoint: test_mode (input port clocked by spi_gated_clk)
+  Endpoint: u_dig_tx_spi_clock_gating/enable_latch_reg
+            (positive level-sensitive latch clocked by spi_clock')
+  Path Group: INREG
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  test_mode (in)                                          0.04       0.44 r
+  U4/Y (OR2X1_LVT)                                        0.08       0.52 r
+  u_dig_tx_spi_clock_gating/i_dig_tx_clock_gating_enable (dig_tx_clock_gating_1)
+                                                          0.00       0.52 r
+  u_dig_tx_spi_clock_gating/enable_latch_reg/D (LATCHX1_LVT)
+                                                          0.00       0.52 r
+  data arrival time                                                  0.52
+
+  clock spi_clock' (rise edge)                            1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.25       0.75
+  u_dig_tx_spi_clock_gating/enable_latch_reg/CLK (LATCHX1_LVT)
+                                                          0.00       0.75 r
+  time borrowed from endpoint                             0.00       0.75
+  data required time                                                 0.75
+  --------------------------------------------------------------------------
+  data required time                                                 0.75
+  data arrival time                                                 -0.52
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.23
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  spi_clock' nominal pulse width                          1.00   
+  library setup time                                     -0.07   
+  --------------------------------------------------------------
+  max time borrow                                         0.93   
+  actual time borrow                                      0.00   
+  --------------------------------------------------------------
+
+
+  Startpoint: SE (input port clocked by spi_gated_clk)
+  Endpoint: u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__7_
+            (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: INREG
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  SE (in)                                                 0.04       0.44 r
+  U10/Y (NBUFFX32_LVT)                                    0.13       0.57 r
+  u_dig_tx_asyn_fifo_read/test_se (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.57 r
+  u_dig_tx_asyn_fifo_read/fifom/test_se (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.57 r
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__7_/SE (SDFFX1_LVT)
+                                                          0.00       0.57 r
+  data arrival time                                                  0.57
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__7_/CLK (SDFFX1_LVT)
+                                                          0.00       1.75 r
+  library setup time                                     -0.28       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -0.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.89
+
+
+  Startpoint: SE (input port clocked by spi_gated_clk)
+  Endpoint: u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__6_
+            (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: INREG
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  SE (in)                                                 0.04       0.44 r
+  U10/Y (NBUFFX32_LVT)                                    0.13       0.57 r
+  u_dig_tx_asyn_fifo_read/test_se (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.57 r
+  u_dig_tx_asyn_fifo_read/fifom/test_se (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.57 r
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__6_/SE (SDFFX1_LVT)
+                                                          0.00       0.57 r
+  data arrival time                                                  0.57
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__6_/CLK (SDFFX1_LVT)
+                                                          0.00       1.75 r
+  library setup time                                     -0.28       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -0.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.89
+
+
+  Startpoint: SE (input port clocked by spi_gated_clk)
+  Endpoint: u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__5_
+            (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: INREG
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  SE (in)                                                 0.04       0.44 r
+  U10/Y (NBUFFX32_LVT)                                    0.13       0.57 r
+  u_dig_tx_asyn_fifo_read/test_se (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.57 r
+  u_dig_tx_asyn_fifo_read/fifom/test_se (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.57 r
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__5_/SE (SDFFX1_LVT)
+                                                          0.00       0.57 r
+  data arrival time                                                  0.57
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__5_/CLK (SDFFX1_LVT)
+                                                          0.00       1.75 r
+  library setup time                                     -0.28       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -0.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.89
+
+
+  Startpoint: SE (input port clocked by spi_gated_clk)
+  Endpoint: u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__4_
+            (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: INREG
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  SE (in)                                                 0.04       0.44 r
+  U10/Y (NBUFFX32_LVT)                                    0.13       0.57 r
+  u_dig_tx_asyn_fifo_read/test_se (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.57 r
+  u_dig_tx_asyn_fifo_read/fifom/test_se (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.57 r
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__4_/SE (SDFFX1_LVT)
+                                                          0.00       0.57 r
+  data arrival time                                                  0.57
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__4_/CLK (SDFFX1_LVT)
+                                                          0.00       1.75 r
+  library setup time                                     -0.28       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -0.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.89
+
+
+  Startpoint: SE (input port clocked by spi_gated_clk)
+  Endpoint: u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__3_
+            (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: INREG
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  SE (in)                                                 0.04       0.44 r
+  U10/Y (NBUFFX32_LVT)                                    0.13       0.57 r
+  u_dig_tx_asyn_fifo_read/test_se (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.57 r
+  u_dig_tx_asyn_fifo_read/fifom/test_se (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.57 r
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__3_/SE (SDFFX1_LVT)
+                                                          0.00       0.57 r
+  data arrival time                                                  0.57
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__3_/CLK (SDFFX1_LVT)
+                                                          0.00       1.75 r
+  library setup time                                     -0.28       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -0.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.89
+
+
+  Startpoint: SE (input port clocked by spi_gated_clk)
+  Endpoint: u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__2_
+            (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: INREG
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  SE (in)                                                 0.04       0.44 r
+  U10/Y (NBUFFX32_LVT)                                    0.13       0.57 r
+  u_dig_tx_asyn_fifo_read/test_se (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.57 r
+  u_dig_tx_asyn_fifo_read/fifom/test_se (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.57 r
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__2_/SE (SDFFX1_LVT)
+                                                          0.00       0.57 r
+  data arrival time                                                  0.57
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__2_/CLK (SDFFX1_LVT)
+                                                          0.00       1.75 r
+  library setup time                                     -0.28       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -0.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.89
+
+
+  Startpoint: SE (input port clocked by spi_gated_clk)
+  Endpoint: u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__1_
+            (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: INREG
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  SE (in)                                                 0.04       0.44 r
+  U10/Y (NBUFFX32_LVT)                                    0.13       0.57 r
+  u_dig_tx_asyn_fifo_read/test_se (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.57 r
+  u_dig_tx_asyn_fifo_read/fifom/test_se (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.57 r
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__1_/SE (SDFFX1_LVT)
+                                                          0.00       0.57 r
+  data arrival time                                                  0.57
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__1_/CLK (SDFFX1_LVT)
+                                                          0.00       1.75 r
+  library setup time                                     -0.28       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -0.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.89
+
+
+  Startpoint: SE (input port clocked by spi_gated_clk)
+  Endpoint: u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__0_
+            (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: INREG
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  SE (in)                                                 0.04       0.44 r
+  U10/Y (NBUFFX32_LVT)                                    0.13       0.57 r
+  u_dig_tx_asyn_fifo_read/test_se (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.57 r
+  u_dig_tx_asyn_fifo_read/fifom/test_se (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.57 r
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__0_/SE (SDFFX1_LVT)
+                                                          0.00       0.57 r
+  data arrival time                                                  0.57
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_0__0_/CLK (SDFFX1_LVT)
+                                                          0.00       1.75 r
+  library setup time                                     -0.28       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -0.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.89
+
+
+  Startpoint: u_spi_slave/state_tx_reg_1_
+              (falling edge-triggered flip-flop clocked by spi_gated_clk)
+  Endpoint: o_dig_tx_system_miso
+            (output port clocked by spi_gated_clk)
+  Path Group: REGOUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  spi_slave          8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (fall edge)                         1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  u_spi_slave/state_tx_reg_1_/CLK (SDFFNASX1_LVT)         0.00       1.00 f
+  u_spi_slave/state_tx_reg_1_/QN (SDFFNASX1_LVT)          0.24       1.24 f
+  u_spi_slave/U69/Y (XNOR2X2_LVT)                         0.15       1.38 f
+  u_spi_slave/U70/Y (OA22X1_LVT)                          0.09       1.47 f
+  u_spi_slave/U73/Y (NAND4X0_LVT)                         0.06       1.54 r
+  u_spi_slave/o_miso (spi_slave)                          0.00       1.54 r
+  o_dig_tx_system_miso (out)                              0.00       1.54 r
+  data arrival time                                                  1.54
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  output external delay                                  -0.28       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -1.54
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.07
+
+
+  Startpoint: u_dig_tx_control_unit/current_state_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: o_dig_tx_system_output_valid
+            (output port clocked by sys_clock)
+  Path Group: REGOUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_control_unit
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_control_unit/current_state_reg_2_/CLK (SDFFARX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_control_unit/current_state_reg_2_/Q (SDFFARX2_LVT)
+                                                          0.34       0.34 r
+  u_dig_tx_control_unit/U28/Y (NAND3X0_LVT)               0.05       0.39 f
+  u_dig_tx_control_unit/U23/Y (NAND3X0_LVT)               0.07       0.46 r
+  u_dig_tx_control_unit/o_dig_tx_control_unit_output_valid (dig_tx_control_unit)
+                                                          0.00       0.46 r
+  o_dig_tx_system_output_valid (out)                      0.00       0.46 r
+  data arrival time                                                  0.46
+
+  clock sys_clock (rise edge)                             1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  output external delay                                  -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -0.46
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.43
+
+
+  Startpoint: u_dig_tx_reg_file/reg_file_reg_2__8_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: o_dig_tx_system_regfile_valid
+            (output port clocked by sys_clock)
+  Path Group: REGOUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_reg_file/reg_file_reg_2__8_/CLK (SDFFARX1_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_reg_file/reg_file_reg_2__8_/QN (SDFFARX1_LVT)
+                                                          0.16       0.16 f
+  u_dig_tx_reg_file/U198/Y (NOR3X0_LVT)                   0.17       0.33 r
+  u_dig_tx_reg_file/U245/Y (AND2X1_LVT)                   0.07       0.40 r
+  u_dig_tx_reg_file/o_dig_tx_reg_file_valid_en (dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32)
+                                                          0.00       0.40 r
+  o_dig_tx_system_regfile_valid (out)                     0.00       0.40 r
+  data arrival time                                                  0.40
+
+  clock sys_clock (rise edge)                             1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  output external delay                                  -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.48
+
+
+  Startpoint: u_dig_tx_reg_file/o_dig_tx_reg_file_sys_tx_done_reg
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: o_dig_tx_system_done
+            (output port clocked by sys_clock)
+  Path Group: REGOUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_reg_file/o_dig_tx_reg_file_sys_tx_done_reg/CLK (SDFFARX1_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_reg_file/o_dig_tx_reg_file_sys_tx_done_reg/Q (SDFFARX1_LVT)
+                                                          0.29       0.29 r
+  u_dig_tx_reg_file/o_dig_tx_reg_file_sys_tx_done (dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32)
+                                                          0.00       0.29 r
+  o_dig_tx_system_done (out)                              0.00       0.29 r
+  data arrival time                                                  0.29
+
+  clock sys_clock (rise edge)                             1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  output external delay                                  -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -0.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: u_dig_tx_serializer/o_dig_tx_serializer_phy_out_reg
+              (rising edge-triggered flip-flop clocked by sys_gated_clk)
+  Endpoint: o_dig_tx_system_data_out
+            (output port clocked by sys_gated_clk)
+  Path Group: REGOUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_serializer/o_dig_tx_serializer_phy_out_reg/CLK (SDFFARX1_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_serializer/o_dig_tx_serializer_phy_out_reg/Q (SDFFARX1_LVT)
+                                                          0.29       0.29 r
+  u_dig_tx_serializer/o_dig_tx_serializer_phy_out (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.29 r
+  o_dig_tx_system_data_out (out)                          0.00       0.29 r
+  data arrival time                                                  0.29
+
+  clock sys_gated_clk (rise edge)                         1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  output external delay                                  -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -0.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: u_dig_tx_crc/o_dig_tx_crc_valid_reg
+              (rising edge-triggered flip-flop clocked by sys_gated_clk)
+  Endpoint: o_dig_tx_system_crc_valid
+            (output port clocked by sys_gated_clk)
+  Path Group: REGOUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_crc/o_dig_tx_crc_valid_reg/CLK (SDFFARX1_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_crc/o_dig_tx_crc_valid_reg/Q (SDFFARX1_LVT)
+                                                          0.29       0.29 r
+  u_dig_tx_crc/o_dig_tx_crc_valid (dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56)
+                                                          0.00       0.29 r
+  o_dig_tx_system_crc_valid (out)                         0.00       0.29 r
+  data arrival time                                                  0.29
+
+  clock sys_gated_clk (rise edge)                         1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  output external delay                                  -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -0.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_1_
+              (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Endpoint: o_dig_tx_system_data_slave_out[7]
+            (output port clocked by spi_gated_clk)
+  Path Group: REGOUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH3_REGISTER_WIDTH8_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_1_/CLK (SDFFARX1_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_1_/Q (SDFFARX1_LVT)
+                                                          0.32       0.32 f
+  u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr[1] (dig_tx_fifo_re_ptr_handler_PTR_WIDTH2)
+                                                          0.00       0.32 f
+  u_dig_tx_asyn_fifo_write/fifom/i_dig_tx_fifo_mem_b_rptr[1] (dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1)
+                                                          0.00       0.32 f
+  u_dig_tx_asyn_fifo_write/fifom/U35/Y (INVX2_LVT)        0.08       0.40 r
+  u_dig_tx_asyn_fifo_write/fifom/U64/Y (NAND3X0_HVT)      0.26       0.66 f
+  u_dig_tx_asyn_fifo_write/fifom/U95/Y (NAND3X0_LVT)      0.15       0.80 r
+  u_dig_tx_asyn_fifo_write/fifom/o_dig_tx_fifo_mem_data_out[7] (dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1)
+                                                          0.00       0.80 r
+  u_dig_tx_asyn_fifo_write/o_dig_tx_asyn_fifo_data_out[7] (dig_tx_asyn_fifo_FIFO_DEPTH3_REGISTER_WIDTH8_test_1)
+                                                          0.00       0.80 r
+  o_dig_tx_system_data_slave_out[7] (out)                 0.00       0.80 r
+  data arrival time                                                  0.80
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  output external delay                                  -0.28       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -0.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.66
+
+
+  Startpoint: u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_1_
+              (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Endpoint: o_dig_tx_system_data_slave_out[4]
+            (output port clocked by spi_gated_clk)
+  Path Group: REGOUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH3_REGISTER_WIDTH8_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_1_/CLK (SDFFARX1_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_1_/Q (SDFFARX1_LVT)
+                                                          0.36       0.36 r
+  u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr[1] (dig_tx_fifo_re_ptr_handler_PTR_WIDTH2)
+                                                          0.00       0.36 r
+  u_dig_tx_asyn_fifo_write/fifom/i_dig_tx_fifo_mem_b_rptr[1] (dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1)
+                                                          0.00       0.36 r
+  u_dig_tx_asyn_fifo_write/fifom/U35/Y (INVX2_LVT)        0.04       0.40 f
+  u_dig_tx_asyn_fifo_write/fifom/U32/Y (NAND3X0_LVT)      0.08       0.48 r
+  u_dig_tx_asyn_fifo_write/fifom/U78/Y (NAND3X0_LVT)      0.06       0.54 f
+  u_dig_tx_asyn_fifo_write/fifom/o_dig_tx_fifo_mem_data_out[4] (dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1)
+                                                          0.00       0.54 f
+  u_dig_tx_asyn_fifo_write/o_dig_tx_asyn_fifo_data_out[4] (dig_tx_asyn_fifo_FIFO_DEPTH3_REGISTER_WIDTH8_test_1)
+                                                          0.00       0.54 f
+  o_dig_tx_system_data_slave_out[4] (out)                 0.00       0.54 f
+  data arrival time                                                  0.54
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  output external delay                                  -0.28       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -0.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.93
+
+
+  Startpoint: u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_1_
+              (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Endpoint: o_dig_tx_system_data_slave_out[3]
+            (output port clocked by spi_gated_clk)
+  Path Group: REGOUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH3_REGISTER_WIDTH8_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_1_/CLK (SDFFARX1_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_1_/Q (SDFFARX1_LVT)
+                                                          0.36       0.36 r
+  u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr[1] (dig_tx_fifo_re_ptr_handler_PTR_WIDTH2)
+                                                          0.00       0.36 r
+  u_dig_tx_asyn_fifo_write/fifom/i_dig_tx_fifo_mem_b_rptr[1] (dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1)
+                                                          0.00       0.36 r
+  u_dig_tx_asyn_fifo_write/fifom/U35/Y (INVX2_LVT)        0.04       0.40 f
+  u_dig_tx_asyn_fifo_write/fifom/U34/Y (NAND3X0_LVT)      0.08       0.48 r
+  u_dig_tx_asyn_fifo_write/fifom/U72/Y (NAND3X0_LVT)      0.06       0.54 f
+  u_dig_tx_asyn_fifo_write/fifom/o_dig_tx_fifo_mem_data_out[3] (dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1)
+                                                          0.00       0.54 f
+  u_dig_tx_asyn_fifo_write/o_dig_tx_asyn_fifo_data_out[3] (dig_tx_asyn_fifo_FIFO_DEPTH3_REGISTER_WIDTH8_test_1)
+                                                          0.00       0.54 f
+  o_dig_tx_system_data_slave_out[3] (out)                 0.00       0.54 f
+  data arrival time                                                  0.54
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  output external delay                                  -0.28       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -0.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.93
+
+
+  Startpoint: u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_1_
+              (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Endpoint: o_dig_tx_system_data_slave_out[2]
+            (output port clocked by spi_gated_clk)
+  Path Group: REGOUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH3_REGISTER_WIDTH8_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_1_/CLK (SDFFARX1_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_1_/Q (SDFFARX1_LVT)
+                                                          0.36       0.36 r
+  u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr[1] (dig_tx_fifo_re_ptr_handler_PTR_WIDTH2)
+                                                          0.00       0.36 r
+  u_dig_tx_asyn_fifo_write/fifom/i_dig_tx_fifo_mem_b_rptr[1] (dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1)
+                                                          0.00       0.36 r
+  u_dig_tx_asyn_fifo_write/fifom/U35/Y (INVX2_LVT)        0.04       0.40 f
+  u_dig_tx_asyn_fifo_write/fifom/U33/Y (NAND3X0_LVT)      0.08       0.48 r
+  u_dig_tx_asyn_fifo_write/fifom/U70/Y (NAND3X0_LVT)      0.06       0.54 f
+  u_dig_tx_asyn_fifo_write/fifom/o_dig_tx_fifo_mem_data_out[2] (dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1)
+                                                          0.00       0.54 f
+  u_dig_tx_asyn_fifo_write/o_dig_tx_asyn_fifo_data_out[2] (dig_tx_asyn_fifo_FIFO_DEPTH3_REGISTER_WIDTH8_test_1)
+                                                          0.00       0.54 f
+  o_dig_tx_system_data_slave_out[2] (out)                 0.00       0.54 f
+  data arrival time                                                  0.54
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  output external delay                                  -0.28       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -0.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.93
+
+
+  Startpoint: u_spi_slave/bit_cnt_reg_reg_0_
+              (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Endpoint: u_spi_slave/state_tx_reg_0_
+            (falling edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: spi_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  spi_slave          8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_spi_slave/bit_cnt_reg_reg_0_/CLK (SDFFARX2_LVT)       0.00       0.00 r
+  u_spi_slave/bit_cnt_reg_reg_0_/QN (SDFFARX2_LVT)        0.18       0.18 f
+  u_spi_slave/U44/Y (INVX2_LVT)                           0.05       0.23 r
+  u_spi_slave/U39/Y (NAND3X0_LVT)                         0.07       0.30 f
+  u_spi_slave/U29/Y (INVX1_LVT)                           0.06       0.36 r
+  u_spi_slave/U28/Y (AND3X1_LVT)                          0.09       0.45 r
+  u_spi_slave/U15/Y (OR2X2_LVT)                           0.08       0.53 r
+  u_spi_slave/U6/Y (INVX2_LVT)                            0.02       0.54 f
+  u_spi_slave/U27/Y (AO222X1_LVT)                         0.08       0.62 f
+  u_spi_slave/U50/Y (AO221X1_LVT)                         0.08       0.70 f
+  u_spi_slave/state_tx_reg_0_/D (SDFFNARX1_LVT)           0.00       0.70 f
+  data arrival time                                                  0.70
+
+  clock spi_gated_clk (fall edge)                         1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.25       0.75
+  u_spi_slave/state_tx_reg_0_/CLK (SDFFNARX1_LVT)         0.00       0.75 f
+  library setup time                                     -0.31       0.44
+  data required time                                                 0.44
+  --------------------------------------------------------------------------
+  data required time                                                 0.44
+  data arrival time                                                 -0.70
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: u_spi_slave/bit_cnt_reg_reg_0_
+              (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Endpoint: u_spi_slave/state_tx_reg_2_
+            (falling edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: spi_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  spi_slave          8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_spi_slave/bit_cnt_reg_reg_0_/CLK (SDFFARX2_LVT)       0.00       0.00 r
+  u_spi_slave/bit_cnt_reg_reg_0_/QN (SDFFARX2_LVT)        0.20       0.20 r
+  u_spi_slave/U44/Y (INVX2_LVT)                           0.03       0.23 f
+  u_spi_slave/U45/Y (AND3X1_LVT)                          0.10       0.33 f
+  u_spi_slave/U43/Y (NAND3X0_LVT)                         0.06       0.39 r
+  u_spi_slave/U14/Y (INVX1_LVT)                           0.04       0.42 f
+  u_spi_slave/U229/Y (NAND4X0_LVT)                        0.06       0.48 r
+  u_spi_slave/U230/Y (NAND2X0_LVT)                        0.04       0.52 f
+  u_spi_slave/U66/Y (NAND2X0_LVT)                         0.08       0.61 r
+  u_spi_slave/U136/Y (NAND4X0_LVT)                        0.07       0.68 f
+  u_spi_slave/state_tx_reg_2_/D (SDFFNARX1_LVT)           0.00       0.68 f
+  data arrival time                                                  0.68
+
+  clock spi_gated_clk (fall edge)                         1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.25       0.75
+  u_spi_slave/state_tx_reg_2_/CLK (SDFFNARX1_LVT)         0.00       0.75 f
+  library setup time                                     -0.32       0.43
+  data required time                                                 0.43
+  --------------------------------------------------------------------------
+  data required time                                                 0.43
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.25
+
+
+  Startpoint: u_spi_slave/bit_cnt_reg_reg_0_
+              (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Endpoint: u_spi_slave/state_tx_reg_1_
+            (falling edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: spi_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  spi_slave          8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_spi_slave/bit_cnt_reg_reg_0_/CLK (SDFFARX2_LVT)       0.00       0.00 r
+  u_spi_slave/bit_cnt_reg_reg_0_/QN (SDFFARX2_LVT)        0.18       0.18 f
+  u_spi_slave/U44/Y (INVX2_LVT)                           0.05       0.23 r
+  u_spi_slave/U45/Y (AND3X1_LVT)                          0.09       0.32 r
+  u_spi_slave/U43/Y (NAND3X0_LVT)                         0.05       0.37 f
+  u_spi_slave/U14/Y (INVX1_LVT)                           0.06       0.43 r
+  u_spi_slave/U231/Y (NAND4X0_LVT)                        0.05       0.49 f
+  u_spi_slave/U232/Y (NAND2X0_LVT)                        0.08       0.56 r
+  u_spi_slave/U65/Y (NAND2X0_LVT)                         0.04       0.60 f
+  u_spi_slave/U134/Y (NAND3X0_LVT)                        0.07       0.67 r
+  u_spi_slave/U204/Y (INVX1_LVT)                          0.03       0.70 f
+  u_spi_slave/state_tx_reg_1_/D (SDFFNASX1_LVT)           0.00       0.70 f
+  data arrival time                                                  0.70
+
+  clock spi_gated_clk (fall edge)                         1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.25       0.75
+  u_spi_slave/state_tx_reg_1_/CLK (SDFFNASX1_LVT)         0.00       0.75 f
+  library setup time                                     -0.29       0.46
+  data required time                                                 0.46
+  --------------------------------------------------------------------------
+  data required time                                                 0.46
+  data arrival time                                                 -0.70
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.24
+
+
+  Startpoint: u_spi_slave/bit_cnt_reg_reg_2_
+              (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Endpoint: u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_full_reg
+            (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: spi_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  spi_slave          8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_wr_ptr_handler_PTR_WIDTH3
+                     ForQA                 saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_spi_slave/bit_cnt_reg_reg_2_/CLK (SDFFARX2_LVT)       0.00       0.00 r
+  u_spi_slave/bit_cnt_reg_reg_2_/QN (SDFFARX2_LVT)        0.20       0.20 r
+  u_spi_slave/U12/Y (INVX2_LVT)                           0.03       0.23 f
+  u_spi_slave/U39/Y (NAND3X0_LVT)                         0.07       0.30 r
+  u_spi_slave/U29/Y (INVX1_LVT)                           0.03       0.33 f
+  u_spi_slave/U28/Y (AND3X1_LVT)                          0.10       0.43 f
+  u_spi_slave/U15/Y (OR2X2_LVT)                           0.09       0.52 f
+  u_spi_slave/U7/Y (INVX0_HVT)                            0.07       0.58 r
+  u_spi_slave/U26/Y (AO222X1_LVT)                         0.11       0.69 r
+  u_spi_slave/U54/Y (AO221X1_LVT)                         0.11       0.80 r
+  u_spi_slave/U233/Y (AND3X1_LVT)                         0.09       0.89 r
+  u_spi_slave/fifo_wr_enable (spi_slave)                  0.00       0.89 r
+  U7/Y (OR2X2_LVT)                                        0.08       0.97 r
+  u_dig_tx_asyn_fifo_read/i_dig_tx_asyn_fifo_wr_en (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.97 r
+  u_dig_tx_asyn_fifo_read/wptr_h/i_dig_tx_fifo_wr_ptr_handler_wr_en (dig_tx_fifo_wr_ptr_handler_PTR_WIDTH3)
+                                                          0.00       0.97 r
+  u_dig_tx_asyn_fifo_read/wptr_h/U25/Y (NAND3X0_LVT)      0.08       1.05 f
+  u_dig_tx_asyn_fifo_read/wptr_h/U21/Y (XOR2X1_LVT)       0.20       1.25 r
+  u_dig_tx_asyn_fifo_read/wptr_h/U29/Y (INVX1_LVT)        0.04       1.29 f
+  u_dig_tx_asyn_fifo_read/wptr_h/U35/Y (XOR2X2_LVT)       0.15       1.44 r
+  u_dig_tx_asyn_fifo_read/wptr_h/U37/Y (XOR2X2_LVT)       0.13       1.57 f
+  u_dig_tx_asyn_fifo_read/wptr_h/U38/Y (NAND4X0_LVT)      0.09       1.66 r
+  u_dig_tx_asyn_fifo_read/wptr_h/U24/Y (INVX1_LVT)        0.02       1.68 f
+  u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_full_reg/D (SDFFARX1_LVT)
+                                                          0.00       1.68 f
+  data arrival time                                                  1.68
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  u_dig_tx_asyn_fifo_read/wptr_h/o_dig_tx_fifo_wr_ptr_handler_full_reg/CLK (SDFFARX1_LVT)
+                                                          0.00       1.75 r
+  library setup time                                     -0.27       1.48
+  data required time                                                 1.48
+  --------------------------------------------------------------------------
+  data required time                                                 1.48
+  data arrival time                                                 -1.68
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.21
+
+
+  Startpoint: u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_1_
+              (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Endpoint: u_spi_slave/miso_reg_reg_1_
+            (falling edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: spi_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH3_REGISTER_WIDTH8_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  spi_slave          8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_1_/CLK (SDFFARX1_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_1_/Q (SDFFARX1_LVT)
+                                                          0.36       0.36 r
+  u_dig_tx_asyn_fifo_write/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr[1] (dig_tx_fifo_re_ptr_handler_PTR_WIDTH2)
+                                                          0.00       0.36 r
+  u_dig_tx_asyn_fifo_write/fifom/i_dig_tx_fifo_mem_b_rptr[1] (dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1)
+                                                          0.00       0.36 r
+  u_dig_tx_asyn_fifo_write/fifom/U35/Y (INVX2_LVT)        0.04       0.40 f
+  u_dig_tx_asyn_fifo_write/fifom/U58/Y (NAND3X0_LVT)      0.08       0.48 r
+  u_dig_tx_asyn_fifo_write/fifom/U67/Y (NAND3X0_LVT)      0.06       0.53 f
+  u_dig_tx_asyn_fifo_write/fifom/o_dig_tx_fifo_mem_data_out[0] (dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1)
+                                                          0.00       0.53 f
+  u_dig_tx_asyn_fifo_write/o_dig_tx_asyn_fifo_data_out[0] (dig_tx_asyn_fifo_FIFO_DEPTH3_REGISTER_WIDTH8_test_1)
+                                                          0.00       0.53 f
+  u_spi_slave/i_rf_din[0] (spi_slave)                     0.00       0.53 f
+  u_spi_slave/U106/Y (NAND2X0_LVT)                        0.08       0.61 r
+  u_spi_slave/U108/Y (NAND2X0_LVT)                        0.04       0.65 f
+  u_spi_slave/miso_reg_reg_1_/D (SDFFNARX1_LVT)           0.00       0.65 f
+  data arrival time                                                  0.65
+
+  clock spi_gated_clk (fall edge)                         1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.25       0.75
+  u_spi_slave/miso_reg_reg_1_/CLK (SDFFNARX1_LVT)         0.00       0.75 f
+  library setup time                                     -0.31       0.44
+  data required time                                                 0.44
+  --------------------------------------------------------------------------
+  data required time                                                 0.44
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.20
+
+
+  Startpoint: u_spi_slave/bit_cnt_reg_reg_2_
+              (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Endpoint: u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__6_
+            (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: spi_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  spi_slave          8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_spi_slave/bit_cnt_reg_reg_2_/CLK (SDFFARX2_LVT)       0.00       0.00 r
+  u_spi_slave/bit_cnt_reg_reg_2_/QN (SDFFARX2_LVT)        0.20       0.20 r
+  u_spi_slave/U12/Y (INVX2_LVT)                           0.03       0.23 f
+  u_spi_slave/U39/Y (NAND3X0_LVT)                         0.07       0.30 r
+  u_spi_slave/U29/Y (INVX1_LVT)                           0.03       0.33 f
+  u_spi_slave/U28/Y (AND3X1_LVT)                          0.10       0.43 f
+  u_spi_slave/U15/Y (OR2X2_LVT)                           0.09       0.52 f
+  u_spi_slave/U7/Y (INVX0_HVT)                            0.07       0.58 r
+  u_spi_slave/U26/Y (AO222X1_LVT)                         0.11       0.69 r
+  u_spi_slave/U54/Y (AO221X1_LVT)                         0.11       0.80 r
+  u_spi_slave/U233/Y (AND3X1_LVT)                         0.09       0.89 r
+  u_spi_slave/fifo_wr_enable (spi_slave)                  0.00       0.89 r
+  U7/Y (OR2X2_LVT)                                        0.08       0.97 r
+  u_dig_tx_asyn_fifo_read/i_dig_tx_asyn_fifo_wr_en (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.97 r
+  u_dig_tx_asyn_fifo_read/U5/Y (IBUFFX2_HVT)              0.24       1.21 f
+  u_dig_tx_asyn_fifo_read/U6/Y (INVX1_LVT)                0.06       1.27 r
+  u_dig_tx_asyn_fifo_read/fifom/i_dig_tx_fifo_mem_wr_en (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       1.27 r
+  u_dig_tx_asyn_fifo_read/fifom/U158/Y (AND3X1_LVT)       0.10       1.37 r
+  u_dig_tx_asyn_fifo_read/fifom/U113/Y (AND3X2_LVT)       0.17       1.54 r
+  u_dig_tx_asyn_fifo_read/fifom/U265/Y (MUX21X1_LVT)      0.18       1.72 f
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__6_/D (SDFFX1_LVT)
+                                                          0.00       1.72 f
+  data arrival time                                                  1.72
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__6_/CLK (SDFFX1_LVT)
+                                                          0.00       1.75 r
+  library setup time                                     -0.23       1.52
+  data required time                                                 1.52
+  --------------------------------------------------------------------------
+  data required time                                                 1.52
+  data arrival time                                                 -1.72
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.20
+
+
+  Startpoint: u_spi_slave/bit_cnt_reg_reg_2_
+              (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Endpoint: u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__4_
+            (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: spi_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  spi_slave          8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_spi_slave/bit_cnt_reg_reg_2_/CLK (SDFFARX2_LVT)       0.00       0.00 r
+  u_spi_slave/bit_cnt_reg_reg_2_/QN (SDFFARX2_LVT)        0.20       0.20 r
+  u_spi_slave/U12/Y (INVX2_LVT)                           0.03       0.23 f
+  u_spi_slave/U39/Y (NAND3X0_LVT)                         0.07       0.30 r
+  u_spi_slave/U29/Y (INVX1_LVT)                           0.03       0.33 f
+  u_spi_slave/U28/Y (AND3X1_LVT)                          0.10       0.43 f
+  u_spi_slave/U15/Y (OR2X2_LVT)                           0.09       0.52 f
+  u_spi_slave/U7/Y (INVX0_HVT)                            0.07       0.58 r
+  u_spi_slave/U26/Y (AO222X1_LVT)                         0.11       0.69 r
+  u_spi_slave/U54/Y (AO221X1_LVT)                         0.11       0.80 r
+  u_spi_slave/U233/Y (AND3X1_LVT)                         0.09       0.89 r
+  u_spi_slave/fifo_wr_enable (spi_slave)                  0.00       0.89 r
+  U7/Y (OR2X2_LVT)                                        0.08       0.97 r
+  u_dig_tx_asyn_fifo_read/i_dig_tx_asyn_fifo_wr_en (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.97 r
+  u_dig_tx_asyn_fifo_read/U5/Y (IBUFFX2_HVT)              0.24       1.21 f
+  u_dig_tx_asyn_fifo_read/U6/Y (INVX1_LVT)                0.06       1.27 r
+  u_dig_tx_asyn_fifo_read/fifom/i_dig_tx_fifo_mem_wr_en (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       1.27 r
+  u_dig_tx_asyn_fifo_read/fifom/U158/Y (AND3X1_LVT)       0.10       1.37 r
+  u_dig_tx_asyn_fifo_read/fifom/U113/Y (AND3X2_LVT)       0.17       1.54 r
+  u_dig_tx_asyn_fifo_read/fifom/U267/Y (MUX21X1_LVT)      0.18       1.72 f
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__4_/D (SDFFX1_LVT)
+                                                          0.00       1.72 f
+  data arrival time                                                  1.72
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__4_/CLK (SDFFX1_LVT)
+                                                          0.00       1.75 r
+  library setup time                                     -0.23       1.52
+  data required time                                                 1.52
+  --------------------------------------------------------------------------
+  data required time                                                 1.52
+  data arrival time                                                 -1.72
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.20
+
+
+  Startpoint: u_spi_slave/bit_cnt_reg_reg_2_
+              (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Endpoint: u_dig_tx_asyn_fifo_read/fifom/fifo_reg_1__6_
+            (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: spi_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  spi_slave          8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_spi_slave/bit_cnt_reg_reg_2_/CLK (SDFFARX2_LVT)       0.00       0.00 r
+  u_spi_slave/bit_cnt_reg_reg_2_/QN (SDFFARX2_LVT)        0.20       0.20 r
+  u_spi_slave/U12/Y (INVX2_LVT)                           0.03       0.23 f
+  u_spi_slave/U39/Y (NAND3X0_LVT)                         0.07       0.30 r
+  u_spi_slave/U29/Y (INVX1_LVT)                           0.03       0.33 f
+  u_spi_slave/U28/Y (AND3X1_LVT)                          0.10       0.43 f
+  u_spi_slave/U15/Y (OR2X2_LVT)                           0.09       0.52 f
+  u_spi_slave/U7/Y (INVX0_HVT)                            0.07       0.58 r
+  u_spi_slave/U26/Y (AO222X1_LVT)                         0.11       0.69 r
+  u_spi_slave/U54/Y (AO221X1_LVT)                         0.11       0.80 r
+  u_spi_slave/U233/Y (AND3X1_LVT)                         0.09       0.89 r
+  u_spi_slave/fifo_wr_enable (spi_slave)                  0.00       0.89 r
+  U7/Y (OR2X2_LVT)                                        0.08       0.97 r
+  u_dig_tx_asyn_fifo_read/i_dig_tx_asyn_fifo_wr_en (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.97 r
+  u_dig_tx_asyn_fifo_read/U5/Y (IBUFFX2_HVT)              0.24       1.21 f
+  u_dig_tx_asyn_fifo_read/U6/Y (INVX1_LVT)                0.06       1.27 r
+  u_dig_tx_asyn_fifo_read/fifom/i_dig_tx_fifo_mem_wr_en (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       1.27 r
+  u_dig_tx_asyn_fifo_read/fifom/U158/Y (AND3X1_LVT)       0.10       1.37 r
+  u_dig_tx_asyn_fifo_read/fifom/U110/Y (AND3X2_LVT)       0.17       1.54 r
+  u_dig_tx_asyn_fifo_read/fifom/U275/Y (MUX21X1_LVT)      0.18       1.72 f
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_1__6_/D (SDFFX1_LVT)
+                                                          0.00       1.72 f
+  data arrival time                                                  1.72
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_1__6_/CLK (SDFFX1_LVT)
+                                                          0.00       1.75 r
+  library setup time                                     -0.23       1.52
+  data required time                                                 1.52
+  --------------------------------------------------------------------------
+  data required time                                                 1.52
+  data arrival time                                                 -1.72
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.20
+
+
+  Startpoint: u_spi_slave/bit_cnt_reg_reg_2_
+              (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Endpoint: u_dig_tx_asyn_fifo_read/fifom/fifo_reg_1__4_
+            (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: spi_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  spi_slave          8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_spi_slave/bit_cnt_reg_reg_2_/CLK (SDFFARX2_LVT)       0.00       0.00 r
+  u_spi_slave/bit_cnt_reg_reg_2_/QN (SDFFARX2_LVT)        0.20       0.20 r
+  u_spi_slave/U12/Y (INVX2_LVT)                           0.03       0.23 f
+  u_spi_slave/U39/Y (NAND3X0_LVT)                         0.07       0.30 r
+  u_spi_slave/U29/Y (INVX1_LVT)                           0.03       0.33 f
+  u_spi_slave/U28/Y (AND3X1_LVT)                          0.10       0.43 f
+  u_spi_slave/U15/Y (OR2X2_LVT)                           0.09       0.52 f
+  u_spi_slave/U7/Y (INVX0_HVT)                            0.07       0.58 r
+  u_spi_slave/U26/Y (AO222X1_LVT)                         0.11       0.69 r
+  u_spi_slave/U54/Y (AO221X1_LVT)                         0.11       0.80 r
+  u_spi_slave/U233/Y (AND3X1_LVT)                         0.09       0.89 r
+  u_spi_slave/fifo_wr_enable (spi_slave)                  0.00       0.89 r
+  U7/Y (OR2X2_LVT)                                        0.08       0.97 r
+  u_dig_tx_asyn_fifo_read/i_dig_tx_asyn_fifo_wr_en (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.97 r
+  u_dig_tx_asyn_fifo_read/U5/Y (IBUFFX2_HVT)              0.24       1.21 f
+  u_dig_tx_asyn_fifo_read/U6/Y (INVX1_LVT)                0.06       1.27 r
+  u_dig_tx_asyn_fifo_read/fifom/i_dig_tx_fifo_mem_wr_en (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       1.27 r
+  u_dig_tx_asyn_fifo_read/fifom/U158/Y (AND3X1_LVT)       0.10       1.37 r
+  u_dig_tx_asyn_fifo_read/fifom/U110/Y (AND3X2_LVT)       0.17       1.54 r
+  u_dig_tx_asyn_fifo_read/fifom/U277/Y (MUX21X1_LVT)      0.18       1.72 f
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_1__4_/D (SDFFX1_LVT)
+                                                          0.00       1.72 f
+  data arrival time                                                  1.72
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_1__4_/CLK (SDFFX1_LVT)
+                                                          0.00       1.75 r
+  library setup time                                     -0.23       1.52
+  data required time                                                 1.52
+  --------------------------------------------------------------------------
+  data required time                                                 1.52
+  data arrival time                                                 -1.72
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.20
+
+
+  Startpoint: u_spi_slave/bit_cnt_reg_reg_2_
+              (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Endpoint: u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__8_
+            (rising edge-triggered flip-flop clocked by spi_gated_clk)
+  Path Group: spi_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  spi_slave          8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock spi_gated_clk (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_spi_slave/bit_cnt_reg_reg_2_/CLK (SDFFARX2_LVT)       0.00       0.00 r
+  u_spi_slave/bit_cnt_reg_reg_2_/QN (SDFFARX2_LVT)        0.20       0.20 r
+  u_spi_slave/U12/Y (INVX2_LVT)                           0.03       0.23 f
+  u_spi_slave/U39/Y (NAND3X0_LVT)                         0.07       0.30 r
+  u_spi_slave/U29/Y (INVX1_LVT)                           0.03       0.33 f
+  u_spi_slave/U28/Y (AND3X1_LVT)                          0.10       0.43 f
+  u_spi_slave/U15/Y (OR2X2_LVT)                           0.09       0.52 f
+  u_spi_slave/U7/Y (INVX0_HVT)                            0.07       0.58 r
+  u_spi_slave/U26/Y (AO222X1_LVT)                         0.11       0.69 r
+  u_spi_slave/U54/Y (AO221X1_LVT)                         0.11       0.80 r
+  u_spi_slave/U233/Y (AND3X1_LVT)                         0.09       0.89 r
+  u_spi_slave/fifo_wr_enable (spi_slave)                  0.00       0.89 r
+  U7/Y (OR2X2_LVT)                                        0.08       0.97 r
+  u_dig_tx_asyn_fifo_read/i_dig_tx_asyn_fifo_wr_en (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.97 r
+  u_dig_tx_asyn_fifo_read/U5/Y (IBUFFX2_HVT)              0.24       1.21 f
+  u_dig_tx_asyn_fifo_read/U6/Y (INVX1_LVT)                0.06       1.27 r
+  u_dig_tx_asyn_fifo_read/fifom/i_dig_tx_fifo_mem_wr_en (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       1.27 r
+  u_dig_tx_asyn_fifo_read/fifom/U158/Y (AND3X1_LVT)       0.10       1.37 r
+  u_dig_tx_asyn_fifo_read/fifom/U113/Y (AND3X2_LVT)       0.17       1.54 r
+  u_dig_tx_asyn_fifo_read/fifom/U136/Y (MUX21X1_LVT)      0.18       1.72 f
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__8_/D (SDFFX1_LVT)
+                                                          0.00       1.72 f
+  data arrival time                                                  1.72
+
+  clock spi_gated_clk (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.25       1.75
+  u_dig_tx_asyn_fifo_read/fifom/fifo_reg_2__8_/CLK (SDFFX1_LVT)
+                                                          0.00       1.75 r
+  library setup time                                     -0.23       1.52
+  data required time                                                 1.52
+  --------------------------------------------------------------------------
+  data required time                                                 1.52
+  data arrival time                                                 -1.72
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.20
+
+
+  Startpoint: u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_reg_file/reg_file_reg_4__0_
+            (rising edge-triggered flip-flop clocked by sys_clock)
+  Path Group: sys_clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/CLK (SDFFASX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/QN (SDFFASX2_LVT)
+                                                          0.26       0.26 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr[2] (dig_tx_fifo_re_ptr_handler_PTR_WIDTH3)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/i_dig_tx_fifo_mem_b_rptr[2] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/U109/Y (INVX0_LVT)        0.02       0.28 f
+  u_dig_tx_asyn_fifo_read/fifom/U137/Y (AND3X1_LVT)       0.11       0.39 f
+  u_dig_tx_asyn_fifo_read/fifom/U140/Y (AO22X1_LVT)       0.11       0.50 f
+  u_dig_tx_asyn_fifo_read/fifom/U126/Y (AOI221X1_LVT)     0.11       0.62 r
+  u_dig_tx_asyn_fifo_read/fifom/U199/Y (NAND4X0_LVT)      0.08       0.69 f
+  u_dig_tx_asyn_fifo_read/fifom/o_dig_tx_fifo_mem_data_out[9] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.69 f
+  u_dig_tx_asyn_fifo_read/o_dig_tx_asyn_fifo_data_out[9] (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.69 f
+  u_dig_tx_reg_file/i_dig_tx_reg_file_addr_in[1] (dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32)
+                                                          0.00       0.69 f
+  u_dig_tx_reg_file/U126/Y (INVX0_LVT)                    0.10       0.79 r
+  u_dig_tx_reg_file/U144/Y (NAND3X2_LVT)                  0.13       0.92 f
+  u_dig_tx_reg_file/U196/Y (AND2X1_LVT)                   0.10       1.02 f
+  u_dig_tx_reg_file/U174/Y (MUX21X2_LVT)                  0.13       1.14 f
+  u_dig_tx_reg_file/reg_file_reg_4__0_/D (SDFFARX1_LVT)
+                                                          0.00       1.14 f
+  data arrival time                                                  1.14
+
+  clock sys_clock (rise edge)                             1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_reg_file/reg_file_reg_4__0_/CLK (SDFFARX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -1.14
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.25
+
+
+  Startpoint: u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_reg_file/reg_file_reg_2__0_
+            (rising edge-triggered flip-flop clocked by sys_clock)
+  Path Group: sys_clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/CLK (SDFFASX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/QN (SDFFASX2_LVT)
+                                                          0.26       0.26 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr[2] (dig_tx_fifo_re_ptr_handler_PTR_WIDTH3)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/i_dig_tx_fifo_mem_b_rptr[2] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/U109/Y (INVX0_LVT)        0.02       0.28 f
+  u_dig_tx_asyn_fifo_read/fifom/U137/Y (AND3X1_LVT)       0.11       0.39 f
+  u_dig_tx_asyn_fifo_read/fifom/U123/Y (AO22X1_LVT)       0.11       0.50 f
+  u_dig_tx_asyn_fifo_read/fifom/U121/Y (AOI221X1_LVT)     0.11       0.62 r
+  u_dig_tx_asyn_fifo_read/fifom/U122/Y (NAND4X0_LVT)      0.08       0.70 f
+  u_dig_tx_asyn_fifo_read/fifom/o_dig_tx_fifo_mem_data_out[8] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.70 f
+  u_dig_tx_asyn_fifo_read/o_dig_tx_asyn_fifo_data_out[8] (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.70 f
+  u_dig_tx_reg_file/i_dig_tx_reg_file_addr_in[0] (dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32)
+                                                          0.00       0.70 f
+  u_dig_tx_reg_file/U125/Y (INVX1_LVT)                    0.09       0.78 r
+  u_dig_tx_reg_file/U141/Y (AND2X1_LVT)                   0.11       0.89 r
+  u_dig_tx_reg_file/U200/Y (NAND2X4_LVT)                  0.12       1.01 f
+  u_dig_tx_reg_file/U175/Y (MUX21X1_LVT)                  0.13       1.14 f
+  u_dig_tx_reg_file/reg_file_reg_2__0_/D (SDFFARX1_LVT)
+                                                          0.00       1.14 f
+  data arrival time                                                  1.14
+
+  clock sys_clock (rise edge)                             1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_reg_file/reg_file_reg_2__0_/CLK (SDFFARX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -1.14
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.25
+
+
+  Startpoint: u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_asyn_fifo_write/fifom/fifo_reg_2__2_
+            (rising edge-triggered flip-flop clocked by sys_clock)
+  Path Group: sys_clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/CLK (SDFFASX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/QN (SDFFASX2_LVT)
+                                                          0.26       0.26 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr[2] (dig_tx_fifo_re_ptr_handler_PTR_WIDTH3)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/i_dig_tx_fifo_mem_b_rptr[2] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/U109/Y (INVX0_LVT)        0.02       0.28 f
+  u_dig_tx_asyn_fifo_read/fifom/U137/Y (AND3X1_LVT)       0.11       0.39 f
+  u_dig_tx_asyn_fifo_read/fifom/U123/Y (AO22X1_LVT)       0.11       0.50 f
+  u_dig_tx_asyn_fifo_read/fifom/U121/Y (AOI221X1_LVT)     0.11       0.62 r
+  u_dig_tx_asyn_fifo_read/fifom/U122/Y (NAND4X0_LVT)      0.08       0.70 f
+  u_dig_tx_asyn_fifo_read/fifom/o_dig_tx_fifo_mem_data_out[8] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.70 f
+  u_dig_tx_asyn_fifo_read/o_dig_tx_asyn_fifo_data_out[8] (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.70 f
+  u_dig_tx_reg_file/i_dig_tx_reg_file_addr_in[0] (dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32)
+                                                          0.00       0.70 f
+  u_dig_tx_reg_file/U146/Y (AND2X1_LVT)                   0.15       0.85 f
+  u_dig_tx_reg_file/U151/Y (NAND2X0_LVT)                  0.08       0.93 r
+  u_dig_tx_reg_file/U148/Y (NAND4X0_LVT)                  0.06       0.99 f
+  u_dig_tx_reg_file/U135/Y (AO21X1_LVT)                   0.10       1.09 f
+  u_dig_tx_reg_file/o_dig_tx_reg_file_data_slave_out[2] (dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32)
+                                                          0.00       1.09 f
+  u_dig_tx_asyn_fifo_write/i_dig_tx_asyn_fifo_data_in[2] (dig_tx_asyn_fifo_FIFO_DEPTH3_REGISTER_WIDTH8_test_1)
+                                                          0.00       1.09 f
+  u_dig_tx_asyn_fifo_write/fifom/i_dig_tx_fifo_mem_data_in[2] (dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1)
+                                                          0.00       1.09 f
+  u_dig_tx_asyn_fifo_write/fifom/U45/Y (MUX21X2_LVT)      0.11       1.20 f
+  u_dig_tx_asyn_fifo_write/fifom/fifo_reg_2__2_/D (SDFFX1_LVT)
+                                                          0.00       1.20 f
+  data arrival time                                                  1.20
+
+  clock sys_clock (rise edge)                             1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_asyn_fifo_write/fifom/fifo_reg_2__2_/CLK (SDFFX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.23       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.20
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.25
+
+
+  Startpoint: u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_asyn_fifo_write/fifom/fifo_reg_2__0_
+            (rising edge-triggered flip-flop clocked by sys_clock)
+  Path Group: sys_clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/CLK (SDFFASX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/QN (SDFFASX2_LVT)
+                                                          0.26       0.26 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr[2] (dig_tx_fifo_re_ptr_handler_PTR_WIDTH3)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/i_dig_tx_fifo_mem_b_rptr[2] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/U109/Y (INVX0_LVT)        0.02       0.28 f
+  u_dig_tx_asyn_fifo_read/fifom/U137/Y (AND3X1_LVT)       0.11       0.39 f
+  u_dig_tx_asyn_fifo_read/fifom/U123/Y (AO22X1_LVT)       0.11       0.50 f
+  u_dig_tx_asyn_fifo_read/fifom/U121/Y (AOI221X1_LVT)     0.11       0.62 r
+  u_dig_tx_asyn_fifo_read/fifom/U122/Y (NAND4X0_LVT)      0.08       0.70 f
+  u_dig_tx_asyn_fifo_read/fifom/o_dig_tx_fifo_mem_data_out[8] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.70 f
+  u_dig_tx_asyn_fifo_read/o_dig_tx_asyn_fifo_data_out[8] (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.70 f
+  u_dig_tx_reg_file/i_dig_tx_reg_file_addr_in[0] (dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32)
+                                                          0.00       0.70 f
+  u_dig_tx_reg_file/U146/Y (AND2X1_LVT)                   0.15       0.85 f
+  u_dig_tx_reg_file/U171/Y (NAND2X0_LVT)                  0.08       0.93 r
+  u_dig_tx_reg_file/U167/Y (NAND4X0_LVT)                  0.06       0.99 f
+  u_dig_tx_reg_file/U133/Y (AO21X1_LVT)                   0.10       1.09 f
+  u_dig_tx_reg_file/o_dig_tx_reg_file_data_slave_out[0] (dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32)
+                                                          0.00       1.09 f
+  u_dig_tx_asyn_fifo_write/i_dig_tx_asyn_fifo_data_in[0] (dig_tx_asyn_fifo_FIFO_DEPTH3_REGISTER_WIDTH8_test_1)
+                                                          0.00       1.09 f
+  u_dig_tx_asyn_fifo_write/fifom/i_dig_tx_fifo_mem_data_in[0] (dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1)
+                                                          0.00       1.09 f
+  u_dig_tx_asyn_fifo_write/fifom/U53/Y (MUX21X2_LVT)      0.11       1.20 f
+  u_dig_tx_asyn_fifo_write/fifom/fifo_reg_2__0_/D (SDFFX1_LVT)
+                                                          0.00       1.20 f
+  data arrival time                                                  1.20
+
+  clock sys_clock (rise edge)                             1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_asyn_fifo_write/fifom/fifo_reg_2__0_/CLK (SDFFX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.23       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.20
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.25
+
+
+  Startpoint: u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_asyn_fifo_write/fifom/fifo_reg_0__2_
+            (rising edge-triggered flip-flop clocked by sys_clock)
+  Path Group: sys_clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/CLK (SDFFASX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/QN (SDFFASX2_LVT)
+                                                          0.26       0.26 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr[2] (dig_tx_fifo_re_ptr_handler_PTR_WIDTH3)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/i_dig_tx_fifo_mem_b_rptr[2] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/U109/Y (INVX0_LVT)        0.02       0.28 f
+  u_dig_tx_asyn_fifo_read/fifom/U137/Y (AND3X1_LVT)       0.11       0.39 f
+  u_dig_tx_asyn_fifo_read/fifom/U123/Y (AO22X1_LVT)       0.11       0.50 f
+  u_dig_tx_asyn_fifo_read/fifom/U121/Y (AOI221X1_LVT)     0.11       0.62 r
+  u_dig_tx_asyn_fifo_read/fifom/U122/Y (NAND4X0_LVT)      0.08       0.70 f
+  u_dig_tx_asyn_fifo_read/fifom/o_dig_tx_fifo_mem_data_out[8] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.70 f
+  u_dig_tx_asyn_fifo_read/o_dig_tx_asyn_fifo_data_out[8] (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.70 f
+  u_dig_tx_reg_file/i_dig_tx_reg_file_addr_in[0] (dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32)
+                                                          0.00       0.70 f
+  u_dig_tx_reg_file/U146/Y (AND2X1_LVT)                   0.15       0.85 f
+  u_dig_tx_reg_file/U151/Y (NAND2X0_LVT)                  0.08       0.93 r
+  u_dig_tx_reg_file/U148/Y (NAND4X0_LVT)                  0.06       0.99 f
+  u_dig_tx_reg_file/U135/Y (AO21X1_LVT)                   0.10       1.09 f
+  u_dig_tx_reg_file/o_dig_tx_reg_file_data_slave_out[2] (dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32)
+                                                          0.00       1.09 f
+  u_dig_tx_asyn_fifo_write/i_dig_tx_asyn_fifo_data_in[2] (dig_tx_asyn_fifo_FIFO_DEPTH3_REGISTER_WIDTH8_test_1)
+                                                          0.00       1.09 f
+  u_dig_tx_asyn_fifo_write/fifom/i_dig_tx_fifo_mem_data_in[2] (dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1)
+                                                          0.00       1.09 f
+  u_dig_tx_asyn_fifo_write/fifom/U47/Y (MUX21X2_LVT)      0.11       1.20 f
+  u_dig_tx_asyn_fifo_write/fifom/fifo_reg_0__2_/D (SDFFX1_LVT)
+                                                          0.00       1.20 f
+  data arrival time                                                  1.20
+
+  clock sys_clock (rise edge)                             1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_asyn_fifo_write/fifom/fifo_reg_0__2_/CLK (SDFFX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.23       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.20
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.25
+
+
+  Startpoint: u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_asyn_fifo_write/fifom/fifo_reg_0__0_
+            (rising edge-triggered flip-flop clocked by sys_clock)
+  Path Group: sys_clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/CLK (SDFFASX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/QN (SDFFASX2_LVT)
+                                                          0.26       0.26 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr[2] (dig_tx_fifo_re_ptr_handler_PTR_WIDTH3)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/i_dig_tx_fifo_mem_b_rptr[2] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/U109/Y (INVX0_LVT)        0.02       0.28 f
+  u_dig_tx_asyn_fifo_read/fifom/U137/Y (AND3X1_LVT)       0.11       0.39 f
+  u_dig_tx_asyn_fifo_read/fifom/U123/Y (AO22X1_LVT)       0.11       0.50 f
+  u_dig_tx_asyn_fifo_read/fifom/U121/Y (AOI221X1_LVT)     0.11       0.62 r
+  u_dig_tx_asyn_fifo_read/fifom/U122/Y (NAND4X0_LVT)      0.08       0.70 f
+  u_dig_tx_asyn_fifo_read/fifom/o_dig_tx_fifo_mem_data_out[8] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.70 f
+  u_dig_tx_asyn_fifo_read/o_dig_tx_asyn_fifo_data_out[8] (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.70 f
+  u_dig_tx_reg_file/i_dig_tx_reg_file_addr_in[0] (dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32)
+                                                          0.00       0.70 f
+  u_dig_tx_reg_file/U146/Y (AND2X1_LVT)                   0.15       0.85 f
+  u_dig_tx_reg_file/U171/Y (NAND2X0_LVT)                  0.08       0.93 r
+  u_dig_tx_reg_file/U167/Y (NAND4X0_LVT)                  0.06       0.99 f
+  u_dig_tx_reg_file/U133/Y (AO21X1_LVT)                   0.10       1.09 f
+  u_dig_tx_reg_file/o_dig_tx_reg_file_data_slave_out[0] (dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32)
+                                                          0.00       1.09 f
+  u_dig_tx_asyn_fifo_write/i_dig_tx_asyn_fifo_data_in[0] (dig_tx_asyn_fifo_FIFO_DEPTH3_REGISTER_WIDTH8_test_1)
+                                                          0.00       1.09 f
+  u_dig_tx_asyn_fifo_write/fifom/i_dig_tx_fifo_mem_data_in[0] (dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1)
+                                                          0.00       1.09 f
+  u_dig_tx_asyn_fifo_write/fifom/U56/Y (MUX21X2_LVT)      0.11       1.20 f
+  u_dig_tx_asyn_fifo_write/fifom/fifo_reg_0__0_/D (SDFFX1_LVT)
+                                                          0.00       1.20 f
+  data arrival time                                                  1.20
+
+  clock sys_clock (rise edge)                             1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_asyn_fifo_write/fifom/fifo_reg_0__0_/CLK (SDFFX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.23       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.20
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.25
+
+
+  Startpoint: u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_asyn_fifo_write/fifom/fifo_reg_1__2_
+            (rising edge-triggered flip-flop clocked by sys_clock)
+  Path Group: sys_clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/CLK (SDFFASX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/QN (SDFFASX2_LVT)
+                                                          0.26       0.26 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr[2] (dig_tx_fifo_re_ptr_handler_PTR_WIDTH3)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/i_dig_tx_fifo_mem_b_rptr[2] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/U109/Y (INVX0_LVT)        0.02       0.28 f
+  u_dig_tx_asyn_fifo_read/fifom/U137/Y (AND3X1_LVT)       0.11       0.39 f
+  u_dig_tx_asyn_fifo_read/fifom/U123/Y (AO22X1_LVT)       0.11       0.50 f
+  u_dig_tx_asyn_fifo_read/fifom/U121/Y (AOI221X1_LVT)     0.11       0.62 r
+  u_dig_tx_asyn_fifo_read/fifom/U122/Y (NAND4X0_LVT)      0.08       0.70 f
+  u_dig_tx_asyn_fifo_read/fifom/o_dig_tx_fifo_mem_data_out[8] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.70 f
+  u_dig_tx_asyn_fifo_read/o_dig_tx_asyn_fifo_data_out[8] (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.70 f
+  u_dig_tx_reg_file/i_dig_tx_reg_file_addr_in[0] (dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32)
+                                                          0.00       0.70 f
+  u_dig_tx_reg_file/U146/Y (AND2X1_LVT)                   0.15       0.85 f
+  u_dig_tx_reg_file/U151/Y (NAND2X0_LVT)                  0.08       0.93 r
+  u_dig_tx_reg_file/U148/Y (NAND4X0_LVT)                  0.06       0.99 f
+  u_dig_tx_reg_file/U135/Y (AO21X1_LVT)                   0.10       1.09 f
+  u_dig_tx_reg_file/o_dig_tx_reg_file_data_slave_out[2] (dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32)
+                                                          0.00       1.09 f
+  u_dig_tx_asyn_fifo_write/i_dig_tx_asyn_fifo_data_in[2] (dig_tx_asyn_fifo_FIFO_DEPTH3_REGISTER_WIDTH8_test_1)
+                                                          0.00       1.09 f
+  u_dig_tx_asyn_fifo_write/fifom/i_dig_tx_fifo_mem_data_in[2] (dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1)
+                                                          0.00       1.09 f
+  u_dig_tx_asyn_fifo_write/fifom/U48/Y (MUX21X2_LVT)      0.11       1.20 f
+  u_dig_tx_asyn_fifo_write/fifom/fifo_reg_1__2_/D (SDFFX1_LVT)
+                                                          0.00       1.20 f
+  data arrival time                                                  1.20
+
+  clock sys_clock (rise edge)                             1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_asyn_fifo_write/fifom/fifo_reg_1__2_/CLK (SDFFX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.23       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.20
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.25
+
+
+  Startpoint: u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_asyn_fifo_write/fifom/fifo_reg_1__0_
+            (rising edge-triggered flip-flop clocked by sys_clock)
+  Path Group: sys_clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/CLK (SDFFASX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/QN (SDFFASX2_LVT)
+                                                          0.26       0.26 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr[2] (dig_tx_fifo_re_ptr_handler_PTR_WIDTH3)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/i_dig_tx_fifo_mem_b_rptr[2] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/U109/Y (INVX0_LVT)        0.02       0.28 f
+  u_dig_tx_asyn_fifo_read/fifom/U137/Y (AND3X1_LVT)       0.11       0.39 f
+  u_dig_tx_asyn_fifo_read/fifom/U123/Y (AO22X1_LVT)       0.11       0.50 f
+  u_dig_tx_asyn_fifo_read/fifom/U121/Y (AOI221X1_LVT)     0.11       0.62 r
+  u_dig_tx_asyn_fifo_read/fifom/U122/Y (NAND4X0_LVT)      0.08       0.70 f
+  u_dig_tx_asyn_fifo_read/fifom/o_dig_tx_fifo_mem_data_out[8] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.70 f
+  u_dig_tx_asyn_fifo_read/o_dig_tx_asyn_fifo_data_out[8] (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.70 f
+  u_dig_tx_reg_file/i_dig_tx_reg_file_addr_in[0] (dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32)
+                                                          0.00       0.70 f
+  u_dig_tx_reg_file/U146/Y (AND2X1_LVT)                   0.15       0.85 f
+  u_dig_tx_reg_file/U171/Y (NAND2X0_LVT)                  0.08       0.93 r
+  u_dig_tx_reg_file/U167/Y (NAND4X0_LVT)                  0.06       0.99 f
+  u_dig_tx_reg_file/U133/Y (AO21X1_LVT)                   0.10       1.09 f
+  u_dig_tx_reg_file/o_dig_tx_reg_file_data_slave_out[0] (dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32)
+                                                          0.00       1.09 f
+  u_dig_tx_asyn_fifo_write/i_dig_tx_asyn_fifo_data_in[0] (dig_tx_asyn_fifo_FIFO_DEPTH3_REGISTER_WIDTH8_test_1)
+                                                          0.00       1.09 f
+  u_dig_tx_asyn_fifo_write/fifom/i_dig_tx_fifo_mem_data_in[0] (dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2_test_1)
+                                                          0.00       1.09 f
+  u_dig_tx_asyn_fifo_write/fifom/U55/Y (MUX21X2_LVT)      0.11       1.20 f
+  u_dig_tx_asyn_fifo_write/fifom/fifo_reg_1__0_/D (SDFFX1_LVT)
+                                                          0.00       1.20 f
+  data arrival time                                                  1.20
+
+  clock sys_clock (rise edge)                             1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_asyn_fifo_write/fifom/fifo_reg_1__0_/CLK (SDFFX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.23       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.20
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.25
+
+
+  Startpoint: u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_reg_file/reg_file_reg_4__2_
+            (rising edge-triggered flip-flop clocked by sys_clock)
+  Path Group: sys_clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/CLK (SDFFASX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/QN (SDFFASX2_LVT)
+                                                          0.26       0.26 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr[2] (dig_tx_fifo_re_ptr_handler_PTR_WIDTH3)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/i_dig_tx_fifo_mem_b_rptr[2] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/U109/Y (INVX0_LVT)        0.02       0.28 f
+  u_dig_tx_asyn_fifo_read/fifom/U137/Y (AND3X1_LVT)       0.11       0.39 f
+  u_dig_tx_asyn_fifo_read/fifom/U140/Y (AO22X1_LVT)       0.11       0.50 f
+  u_dig_tx_asyn_fifo_read/fifom/U126/Y (AOI221X1_LVT)     0.11       0.62 r
+  u_dig_tx_asyn_fifo_read/fifom/U199/Y (NAND4X0_LVT)      0.08       0.69 f
+  u_dig_tx_asyn_fifo_read/fifom/o_dig_tx_fifo_mem_data_out[9] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.69 f
+  u_dig_tx_asyn_fifo_read/o_dig_tx_asyn_fifo_data_out[9] (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.69 f
+  u_dig_tx_reg_file/i_dig_tx_reg_file_addr_in[1] (dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32)
+                                                          0.00       0.69 f
+  u_dig_tx_reg_file/U126/Y (INVX0_LVT)                    0.10       0.79 r
+  u_dig_tx_reg_file/U144/Y (NAND3X2_LVT)                  0.13       0.92 f
+  u_dig_tx_reg_file/U195/Y (AND2X1_LVT)                   0.09       1.02 f
+  u_dig_tx_reg_file/U154/Y (MUX21X2_LVT)                  0.13       1.14 f
+  u_dig_tx_reg_file/reg_file_reg_4__2_/D (SDFFARX1_LVT)
+                                                          0.00       1.14 f
+  data arrival time                                                  1.14
+
+  clock sys_clock (rise edge)                             1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_reg_file/reg_file_reg_4__2_/CLK (SDFFARX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -1.14
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.25
+
+
+  Startpoint: u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_reg_file/reg_file_reg_4__1_
+            (rising edge-triggered flip-flop clocked by sys_clock)
+  Path Group: sys_clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/CLK (SDFFASX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr_reg_2_/QN (SDFFASX2_LVT)
+                                                          0.26       0.26 r
+  u_dig_tx_asyn_fifo_read/rptr_h/o_dig_tx_fifo_re_ptr_handler_b_rptr[2] (dig_tx_fifo_re_ptr_handler_PTR_WIDTH3)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/i_dig_tx_fifo_mem_b_rptr[2] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.26 r
+  u_dig_tx_asyn_fifo_read/fifom/U109/Y (INVX0_LVT)        0.02       0.28 f
+  u_dig_tx_asyn_fifo_read/fifom/U137/Y (AND3X1_LVT)       0.11       0.39 f
+  u_dig_tx_asyn_fifo_read/fifom/U140/Y (AO22X1_LVT)       0.11       0.50 f
+  u_dig_tx_asyn_fifo_read/fifom/U126/Y (AOI221X1_LVT)     0.11       0.62 r
+  u_dig_tx_asyn_fifo_read/fifom/U199/Y (NAND4X0_LVT)      0.08       0.69 f
+  u_dig_tx_asyn_fifo_read/fifom/o_dig_tx_fifo_mem_data_out[9] (dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3_test_1)
+                                                          0.00       0.69 f
+  u_dig_tx_asyn_fifo_read/o_dig_tx_asyn_fifo_data_out[9] (dig_tx_asyn_fifo_FIFO_DEPTH8_REGISTER_WIDTH8_ADDRESS_WIDTH3_VALID_WIDTH1_test_1)
+                                                          0.00       0.69 f
+  u_dig_tx_reg_file/i_dig_tx_reg_file_addr_in[1] (dig_tx_reg_file_REGISTER_DEPTH5_REGISTER_WIDTH8_PAYLOAD_WIDTH32)
+                                                          0.00       0.69 f
+  u_dig_tx_reg_file/U126/Y (INVX0_LVT)                    0.10       0.79 r
+  u_dig_tx_reg_file/U144/Y (NAND3X2_LVT)                  0.13       0.92 f
+  u_dig_tx_reg_file/U214/Y (AND2X1_LVT)                   0.09       1.02 f
+  u_dig_tx_reg_file/U164/Y (MUX21X2_LVT)                  0.13       1.14 f
+  u_dig_tx_reg_file/reg_file_reg_4__1_/D (SDFFARX1_LVT)
+                                                          0.00       1.14 f
+  data arrival time                                                  1.14
+
+  clock sys_clock (rise edge)                             1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_reg_file/reg_file_reg_4__1_/CLK (SDFFARX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -1.14
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.25
+
+
+  Startpoint: u_dig_tx_control_unit/current_state_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_crc/o_dig_tx_crc_data_out_reg_9_
+            (rising edge-triggered flip-flop clocked by sys_gated_clk)
+  Path Group: sys_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_control_unit
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_control_unit/current_state_reg_2_/CLK (SDFFARX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_control_unit/current_state_reg_2_/QN (SDFFARX2_LVT)
+                                                          0.23       0.23 r
+  u_dig_tx_control_unit/U11/Y (INVX4_LVT)                 0.02       0.25 f
+  u_dig_tx_control_unit/U17/Y (INVX2_LVT)                 0.04       0.28 r
+  u_dig_tx_control_unit/U18/Y (OR3X1_LVT)                 0.09       0.37 r
+  u_dig_tx_control_unit/U23/Y (NAND3X0_LVT)               0.06       0.43 f
+  u_dig_tx_control_unit/U29/Y (AO21X1_LVT)                0.08       0.51 f
+  u_dig_tx_control_unit/U79/Y (AND2X1_LVT)                0.08       0.59 f
+  u_dig_tx_control_unit/o_dig_tx_control_unit_clock_mode_en (dig_tx_control_unit)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/i_dig_tx_serializer_clock_mode_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/U82/Y (OR2X2_LVT)                   0.09       0.68 f
+  u_dig_tx_serializer/o_dig_tx_serializer_clock_freq_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/i_dig_tx_crc_clock_freq_en (dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/U55/Y (AND3X1_LVT)                         0.11       0.79 f
+  u_dig_tx_crc/U54/Y (INVX4_LVT)                          0.05       0.84 r
+  u_dig_tx_crc/U53/Y (INVX8_LVT)                          0.04       0.87 f
+  u_dig_tx_crc/U98/Y (MUX21X2_LVT)                        0.13       1.00 f
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_9_/D (SDFFARX1_LVT)
+                                                          0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock sys_gated_clk (rise edge)                         1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_9_/CLK (SDFFARX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11
+
+
+  Startpoint: u_dig_tx_control_unit/current_state_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_crc/o_dig_tx_crc_data_out_reg_8_
+            (rising edge-triggered flip-flop clocked by sys_gated_clk)
+  Path Group: sys_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_control_unit
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_control_unit/current_state_reg_2_/CLK (SDFFARX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_control_unit/current_state_reg_2_/QN (SDFFARX2_LVT)
+                                                          0.23       0.23 r
+  u_dig_tx_control_unit/U11/Y (INVX4_LVT)                 0.02       0.25 f
+  u_dig_tx_control_unit/U17/Y (INVX2_LVT)                 0.04       0.28 r
+  u_dig_tx_control_unit/U18/Y (OR3X1_LVT)                 0.09       0.37 r
+  u_dig_tx_control_unit/U23/Y (NAND3X0_LVT)               0.06       0.43 f
+  u_dig_tx_control_unit/U29/Y (AO21X1_LVT)                0.08       0.51 f
+  u_dig_tx_control_unit/U79/Y (AND2X1_LVT)                0.08       0.59 f
+  u_dig_tx_control_unit/o_dig_tx_control_unit_clock_mode_en (dig_tx_control_unit)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/i_dig_tx_serializer_clock_mode_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/U82/Y (OR2X2_LVT)                   0.09       0.68 f
+  u_dig_tx_serializer/o_dig_tx_serializer_clock_freq_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/i_dig_tx_crc_clock_freq_en (dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/U55/Y (AND3X1_LVT)                         0.11       0.79 f
+  u_dig_tx_crc/U54/Y (INVX4_LVT)                          0.05       0.84 r
+  u_dig_tx_crc/U53/Y (INVX8_LVT)                          0.04       0.87 f
+  u_dig_tx_crc/U94/Y (MUX21X2_LVT)                        0.13       1.00 f
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_8_/D (SDFFARX1_LVT)
+                                                          0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock sys_gated_clk (rise edge)                         1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_8_/CLK (SDFFARX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11
+
+
+  Startpoint: u_dig_tx_control_unit/current_state_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_crc/o_dig_tx_crc_data_out_reg_7_
+            (rising edge-triggered flip-flop clocked by sys_gated_clk)
+  Path Group: sys_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_control_unit
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_control_unit/current_state_reg_2_/CLK (SDFFARX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_control_unit/current_state_reg_2_/QN (SDFFARX2_LVT)
+                                                          0.23       0.23 r
+  u_dig_tx_control_unit/U11/Y (INVX4_LVT)                 0.02       0.25 f
+  u_dig_tx_control_unit/U17/Y (INVX2_LVT)                 0.04       0.28 r
+  u_dig_tx_control_unit/U18/Y (OR3X1_LVT)                 0.09       0.37 r
+  u_dig_tx_control_unit/U23/Y (NAND3X0_LVT)               0.06       0.43 f
+  u_dig_tx_control_unit/U29/Y (AO21X1_LVT)                0.08       0.51 f
+  u_dig_tx_control_unit/U79/Y (AND2X1_LVT)                0.08       0.59 f
+  u_dig_tx_control_unit/o_dig_tx_control_unit_clock_mode_en (dig_tx_control_unit)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/i_dig_tx_serializer_clock_mode_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/U82/Y (OR2X2_LVT)                   0.09       0.68 f
+  u_dig_tx_serializer/o_dig_tx_serializer_clock_freq_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/i_dig_tx_crc_clock_freq_en (dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/U55/Y (AND3X1_LVT)                         0.11       0.79 f
+  u_dig_tx_crc/U54/Y (INVX4_LVT)                          0.05       0.84 r
+  u_dig_tx_crc/U53/Y (INVX8_LVT)                          0.04       0.87 f
+  u_dig_tx_crc/U44/Y (MUX21X2_LVT)                        0.13       1.00 f
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_7_/D (SDFFARX1_LVT)
+                                                          0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock sys_gated_clk (rise edge)                         1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_7_/CLK (SDFFARX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11
+
+
+  Startpoint: u_dig_tx_control_unit/current_state_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_crc/o_dig_tx_crc_data_out_reg_6_
+            (rising edge-triggered flip-flop clocked by sys_gated_clk)
+  Path Group: sys_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_control_unit
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_control_unit/current_state_reg_2_/CLK (SDFFARX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_control_unit/current_state_reg_2_/QN (SDFFARX2_LVT)
+                                                          0.23       0.23 r
+  u_dig_tx_control_unit/U11/Y (INVX4_LVT)                 0.02       0.25 f
+  u_dig_tx_control_unit/U17/Y (INVX2_LVT)                 0.04       0.28 r
+  u_dig_tx_control_unit/U18/Y (OR3X1_LVT)                 0.09       0.37 r
+  u_dig_tx_control_unit/U23/Y (NAND3X0_LVT)               0.06       0.43 f
+  u_dig_tx_control_unit/U29/Y (AO21X1_LVT)                0.08       0.51 f
+  u_dig_tx_control_unit/U79/Y (AND2X1_LVT)                0.08       0.59 f
+  u_dig_tx_control_unit/o_dig_tx_control_unit_clock_mode_en (dig_tx_control_unit)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/i_dig_tx_serializer_clock_mode_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/U82/Y (OR2X2_LVT)                   0.09       0.68 f
+  u_dig_tx_serializer/o_dig_tx_serializer_clock_freq_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/i_dig_tx_crc_clock_freq_en (dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/U55/Y (AND3X1_LVT)                         0.11       0.79 f
+  u_dig_tx_crc/U54/Y (INVX4_LVT)                          0.05       0.84 r
+  u_dig_tx_crc/U53/Y (INVX8_LVT)                          0.04       0.87 f
+  u_dig_tx_crc/U45/Y (MUX21X2_LVT)                        0.13       1.00 f
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_6_/D (SDFFARX1_LVT)
+                                                          0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock sys_gated_clk (rise edge)                         1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_6_/CLK (SDFFARX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11
+
+
+  Startpoint: u_dig_tx_control_unit/current_state_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_crc/o_dig_tx_crc_data_out_reg_5_
+            (rising edge-triggered flip-flop clocked by sys_gated_clk)
+  Path Group: sys_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_control_unit
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_control_unit/current_state_reg_2_/CLK (SDFFARX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_control_unit/current_state_reg_2_/QN (SDFFARX2_LVT)
+                                                          0.23       0.23 r
+  u_dig_tx_control_unit/U11/Y (INVX4_LVT)                 0.02       0.25 f
+  u_dig_tx_control_unit/U17/Y (INVX2_LVT)                 0.04       0.28 r
+  u_dig_tx_control_unit/U18/Y (OR3X1_LVT)                 0.09       0.37 r
+  u_dig_tx_control_unit/U23/Y (NAND3X0_LVT)               0.06       0.43 f
+  u_dig_tx_control_unit/U29/Y (AO21X1_LVT)                0.08       0.51 f
+  u_dig_tx_control_unit/U79/Y (AND2X1_LVT)                0.08       0.59 f
+  u_dig_tx_control_unit/o_dig_tx_control_unit_clock_mode_en (dig_tx_control_unit)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/i_dig_tx_serializer_clock_mode_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/U82/Y (OR2X2_LVT)                   0.09       0.68 f
+  u_dig_tx_serializer/o_dig_tx_serializer_clock_freq_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/i_dig_tx_crc_clock_freq_en (dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/U55/Y (AND3X1_LVT)                         0.11       0.79 f
+  u_dig_tx_crc/U54/Y (INVX4_LVT)                          0.05       0.84 r
+  u_dig_tx_crc/U53/Y (INVX8_LVT)                          0.04       0.87 f
+  u_dig_tx_crc/U101/Y (MUX21X2_LVT)                       0.13       1.00 f
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_5_/D (SDFFARX1_LVT)
+                                                          0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock sys_gated_clk (rise edge)                         1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_5_/CLK (SDFFARX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11
+
+
+  Startpoint: u_dig_tx_control_unit/current_state_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_crc/o_dig_tx_crc_data_out_reg_4_
+            (rising edge-triggered flip-flop clocked by sys_gated_clk)
+  Path Group: sys_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_control_unit
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_control_unit/current_state_reg_2_/CLK (SDFFARX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_control_unit/current_state_reg_2_/QN (SDFFARX2_LVT)
+                                                          0.23       0.23 r
+  u_dig_tx_control_unit/U11/Y (INVX4_LVT)                 0.02       0.25 f
+  u_dig_tx_control_unit/U17/Y (INVX2_LVT)                 0.04       0.28 r
+  u_dig_tx_control_unit/U18/Y (OR3X1_LVT)                 0.09       0.37 r
+  u_dig_tx_control_unit/U23/Y (NAND3X0_LVT)               0.06       0.43 f
+  u_dig_tx_control_unit/U29/Y (AO21X1_LVT)                0.08       0.51 f
+  u_dig_tx_control_unit/U79/Y (AND2X1_LVT)                0.08       0.59 f
+  u_dig_tx_control_unit/o_dig_tx_control_unit_clock_mode_en (dig_tx_control_unit)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/i_dig_tx_serializer_clock_mode_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/U82/Y (OR2X2_LVT)                   0.09       0.68 f
+  u_dig_tx_serializer/o_dig_tx_serializer_clock_freq_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/i_dig_tx_crc_clock_freq_en (dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/U55/Y (AND3X1_LVT)                         0.11       0.79 f
+  u_dig_tx_crc/U54/Y (INVX4_LVT)                          0.05       0.84 r
+  u_dig_tx_crc/U53/Y (INVX8_LVT)                          0.04       0.87 f
+  u_dig_tx_crc/U100/Y (MUX21X2_LVT)                       0.13       1.00 f
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_4_/D (SDFFARX1_LVT)
+                                                          0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock sys_gated_clk (rise edge)                         1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_4_/CLK (SDFFARX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11
+
+
+  Startpoint: u_dig_tx_control_unit/current_state_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_crc/o_dig_tx_crc_data_out_reg_3_
+            (rising edge-triggered flip-flop clocked by sys_gated_clk)
+  Path Group: sys_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_control_unit
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_control_unit/current_state_reg_2_/CLK (SDFFARX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_control_unit/current_state_reg_2_/QN (SDFFARX2_LVT)
+                                                          0.23       0.23 r
+  u_dig_tx_control_unit/U11/Y (INVX4_LVT)                 0.02       0.25 f
+  u_dig_tx_control_unit/U17/Y (INVX2_LVT)                 0.04       0.28 r
+  u_dig_tx_control_unit/U18/Y (OR3X1_LVT)                 0.09       0.37 r
+  u_dig_tx_control_unit/U23/Y (NAND3X0_LVT)               0.06       0.43 f
+  u_dig_tx_control_unit/U29/Y (AO21X1_LVT)                0.08       0.51 f
+  u_dig_tx_control_unit/U79/Y (AND2X1_LVT)                0.08       0.59 f
+  u_dig_tx_control_unit/o_dig_tx_control_unit_clock_mode_en (dig_tx_control_unit)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/i_dig_tx_serializer_clock_mode_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/U82/Y (OR2X2_LVT)                   0.09       0.68 f
+  u_dig_tx_serializer/o_dig_tx_serializer_clock_freq_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/i_dig_tx_crc_clock_freq_en (dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/U55/Y (AND3X1_LVT)                         0.11       0.79 f
+  u_dig_tx_crc/U54/Y (INVX4_LVT)                          0.05       0.84 r
+  u_dig_tx_crc/U53/Y (INVX8_LVT)                          0.04       0.87 f
+  u_dig_tx_crc/U95/Y (MUX21X2_LVT)                        0.13       1.00 f
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_3_/D (SDFFARX1_LVT)
+                                                          0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock sys_gated_clk (rise edge)                         1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_3_/CLK (SDFFARX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11
+
+
+  Startpoint: u_dig_tx_control_unit/current_state_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_crc/o_dig_tx_crc_data_out_reg_2_
+            (rising edge-triggered flip-flop clocked by sys_gated_clk)
+  Path Group: sys_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_control_unit
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_control_unit/current_state_reg_2_/CLK (SDFFARX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_control_unit/current_state_reg_2_/QN (SDFFARX2_LVT)
+                                                          0.23       0.23 r
+  u_dig_tx_control_unit/U11/Y (INVX4_LVT)                 0.02       0.25 f
+  u_dig_tx_control_unit/U17/Y (INVX2_LVT)                 0.04       0.28 r
+  u_dig_tx_control_unit/U18/Y (OR3X1_LVT)                 0.09       0.37 r
+  u_dig_tx_control_unit/U23/Y (NAND3X0_LVT)               0.06       0.43 f
+  u_dig_tx_control_unit/U29/Y (AO21X1_LVT)                0.08       0.51 f
+  u_dig_tx_control_unit/U79/Y (AND2X1_LVT)                0.08       0.59 f
+  u_dig_tx_control_unit/o_dig_tx_control_unit_clock_mode_en (dig_tx_control_unit)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/i_dig_tx_serializer_clock_mode_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/U82/Y (OR2X2_LVT)                   0.09       0.68 f
+  u_dig_tx_serializer/o_dig_tx_serializer_clock_freq_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/i_dig_tx_crc_clock_freq_en (dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/U55/Y (AND3X1_LVT)                         0.11       0.79 f
+  u_dig_tx_crc/U54/Y (INVX4_LVT)                          0.05       0.84 r
+  u_dig_tx_crc/U53/Y (INVX8_LVT)                          0.04       0.87 f
+  u_dig_tx_crc/U99/Y (MUX21X2_LVT)                        0.13       1.00 f
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_2_/D (SDFFARX1_LVT)
+                                                          0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock sys_gated_clk (rise edge)                         1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_2_/CLK (SDFFARX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11
+
+
+  Startpoint: u_dig_tx_control_unit/current_state_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_crc/o_dig_tx_crc_data_out_reg_1_
+            (rising edge-triggered flip-flop clocked by sys_gated_clk)
+  Path Group: sys_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_control_unit
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_control_unit/current_state_reg_2_/CLK (SDFFARX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_control_unit/current_state_reg_2_/QN (SDFFARX2_LVT)
+                                                          0.23       0.23 r
+  u_dig_tx_control_unit/U11/Y (INVX4_LVT)                 0.02       0.25 f
+  u_dig_tx_control_unit/U17/Y (INVX2_LVT)                 0.04       0.28 r
+  u_dig_tx_control_unit/U18/Y (OR3X1_LVT)                 0.09       0.37 r
+  u_dig_tx_control_unit/U23/Y (NAND3X0_LVT)               0.06       0.43 f
+  u_dig_tx_control_unit/U29/Y (AO21X1_LVT)                0.08       0.51 f
+  u_dig_tx_control_unit/U79/Y (AND2X1_LVT)                0.08       0.59 f
+  u_dig_tx_control_unit/o_dig_tx_control_unit_clock_mode_en (dig_tx_control_unit)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/i_dig_tx_serializer_clock_mode_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/U82/Y (OR2X2_LVT)                   0.09       0.68 f
+  u_dig_tx_serializer/o_dig_tx_serializer_clock_freq_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/i_dig_tx_crc_clock_freq_en (dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/U55/Y (AND3X1_LVT)                         0.11       0.79 f
+  u_dig_tx_crc/U54/Y (INVX4_LVT)                          0.05       0.84 r
+  u_dig_tx_crc/U53/Y (INVX8_LVT)                          0.04       0.87 f
+  u_dig_tx_crc/U96/Y (MUX21X2_LVT)                        0.13       1.00 f
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_1_/D (SDFFARX1_LVT)
+                                                          0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock sys_gated_clk (rise edge)                         1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_1_/CLK (SDFFARX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11
+
+
+  Startpoint: u_dig_tx_control_unit/current_state_reg_2_
+              (rising edge-triggered flip-flop clocked by sys_clock)
+  Endpoint: u_dig_tx_crc/o_dig_tx_crc_data_out_reg_0_
+            (rising edge-triggered flip-flop clocked by sys_gated_clk)
+  Path Group: sys_gated_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dig_tx_system      8000                  saed32hvt_ss0p7v125c
+  dig_tx_control_unit
+                     8000                  saed32hvt_ss0p7v125c
+  dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56
+                     8000                  saed32hvt_ss0p7v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clock (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dig_tx_control_unit/current_state_reg_2_/CLK (SDFFARX2_LVT)
+                                                          0.00       0.00 r
+  u_dig_tx_control_unit/current_state_reg_2_/QN (SDFFARX2_LVT)
+                                                          0.23       0.23 r
+  u_dig_tx_control_unit/U11/Y (INVX4_LVT)                 0.02       0.25 f
+  u_dig_tx_control_unit/U17/Y (INVX2_LVT)                 0.04       0.28 r
+  u_dig_tx_control_unit/U18/Y (OR3X1_LVT)                 0.09       0.37 r
+  u_dig_tx_control_unit/U23/Y (NAND3X0_LVT)               0.06       0.43 f
+  u_dig_tx_control_unit/U29/Y (AO21X1_LVT)                0.08       0.51 f
+  u_dig_tx_control_unit/U79/Y (AND2X1_LVT)                0.08       0.59 f
+  u_dig_tx_control_unit/o_dig_tx_control_unit_clock_mode_en (dig_tx_control_unit)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/i_dig_tx_serializer_clock_mode_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.59 f
+  u_dig_tx_serializer/U82/Y (OR2X2_LVT)                   0.09       0.68 f
+  u_dig_tx_serializer/o_dig_tx_serializer_clock_freq_en (dig_tx_serializer_32_16_24_55557a)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/i_dig_tx_crc_clock_freq_en (dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56)
+                                                          0.00       0.68 f
+  u_dig_tx_crc/U55/Y (AND3X1_LVT)                         0.11       0.79 f
+  u_dig_tx_crc/U54/Y (INVX4_LVT)                          0.05       0.84 r
+  u_dig_tx_crc/U53/Y (INVX8_LVT)                          0.04       0.87 f
+  u_dig_tx_crc/U52/Y (MUX21X2_LVT)                        0.13       1.00 f
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_0_/D (SDFFARX1_LVT)
+                                                          0.00       1.00 f
+  data arrival time                                                  1.00
+
+  clock sys_gated_clk (rise edge)                         1.42       1.42
+  clock network delay (ideal)                             0.00       1.42
+  clock uncertainty                                      -0.25       1.17
+  u_dig_tx_crc/o_dig_tx_crc_data_out_reg_0_/CLK (SDFFARX1_LVT)
+                                                          0.00       1.17 r
+  library setup time                                     -0.28       0.89
+  data required time                                                 0.89
+  --------------------------------------------------------------------------
+  data required time                                                 0.89
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11
+
+
+1

@@ -1,0 +1,94 @@
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP1
+Date:        Mon May 19 10:23:06 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      8
+    Unconnected ports (LINT-28)                                     7
+    Feedthrough (LINT-29)                                           1
+
+Cells                                                              34
+    Cells do not drive (LINT-1)                                    12
+    Connected to power or ground (LINT-32)                         20
+    Nets connected to multiple pins on same cell (LINT-33)          2
+
+Nets                                                                7
+    Unloaded nets (LINT-2)                                          7
+--------------------------------------------------------------------------------
+
+Warning: In design 'dig_tx_system', cell 'u_dig_tx_pow_man_unit' does not drive any nets. (LINT-1)
+Warning: In design 'spi_slave', cell 'C1204' does not drive any nets. (LINT-1)
+Warning: In design 'spi_slave', cell 'C1213' does not drive any nets. (LINT-1)
+Warning: In design 'spi_slave', cell 'C1219' does not drive any nets. (LINT-1)
+Warning: In design 'spi_slave', cell 'C1220' does not drive any nets. (LINT-1)
+Warning: In design 'spi_slave', cell 'C1226' does not drive any nets. (LINT-1)
+Warning: In design 'spi_slave', cell 'C1227' does not drive any nets. (LINT-1)
+Warning: In design 'dig_tx_control_unit', cell 'C245' does not drive any nets. (LINT-1)
+Warning: In design 'dig_tx_serializer_32_16_24_55557a', cell 'C477' does not drive any nets. (LINT-1)
+Warning: In design 'dig_tx_serializer_32_16_24_55557a', cell 'C487' does not drive any nets. (LINT-1)
+Warning: In design 'dig_tx_serializer_32_16_24_55557a', cell 'C497' does not drive any nets. (LINT-1)
+Warning: In design 'dig_tx_crc_REGISTER_WIDTH16_INPUT_LENGTH56', cell 'C285' does not drive any nets. (LINT-1)
+Warning: In design 'dig_tx_system', net 'address_null[0]' driven by pin 'u_spi_slave/o_rf_addr[3]' has no loads. (LINT-2)
+Warning: In design 'dig_tx_system', net 'address_null[1]' driven by pin 'u_spi_slave/o_rf_addr[4]' has no loads. (LINT-2)
+Warning: In design 'dig_tx_system', net 'address_null[2]' driven by pin 'u_spi_slave/o_rf_addr[5]' has no loads. (LINT-2)
+Warning: In design 'dig_tx_system', net 'address_null[3]' driven by pin 'u_spi_slave/o_rf_addr[6]' has no loads. (LINT-2)
+Warning: In design 'dig_tx_system', net 'address_null[4]' driven by pin 'u_spi_slave/o_rf_addr[7]' has no loads. (LINT-2)
+Warning: In design 'dig_tx_system', net 'address_null[5]' driven by pin 'u_dig_tx_asyn_fifo_read/o_dig_tx_asyn_fifo_data_out[11]' has no loads. (LINT-2)
+Warning: In design 'dig_tx_system', net 'address_null[6]' driven by pin 'u_dig_tx_asyn_fifo_write/o_dig_tx_asyn_fifo_empty' has no loads. (LINT-2)
+Warning: In design 'dig_tx_system', port 'SI' is not connected to any nets. (LINT-28)
+Warning: In design 'dig_tx_system', port 'SE' is not connected to any nets. (LINT-28)
+Warning: In design 'dig_tx_system', port 'SO' is not connected to any nets. (LINT-28)
+Warning: In design 'dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3', port 'i_dig_tx_fifo_mem_b_wptr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'dig_tx_fifo_mem_FIFO_DEPTH8_REGISTER_WIDTH12_PTR_WIDTH3', port 'i_dig_tx_fifo_mem_b_rptr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2', port 'i_dig_tx_fifo_mem_b_wptr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'dig_tx_fifo_mem_FIFO_DEPTH3_REGISTER_WIDTH8_PTR_WIDTH2', port 'i_dig_tx_fifo_mem_b_rptr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'dig_tx_pow_man_unit', input port 'i_dig_tx_pow_man_unit_spi_pow_en' is connected directly to output port 'o_dig_tx_pow_man_unit_spi_sleep_en'. (LINT-29)
+Warning: In design 'dig_tx_system', a pin on submodule 'u_spi_slave' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_scan_mode' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_spi_slave' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_ioring_rst_n' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_spi_slave' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_status[15]' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_spi_slave' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_status[14]' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_spi_slave' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_status[13]' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_spi_slave' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_status[12]' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_spi_slave' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_status[11]' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_spi_slave' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_status[10]' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_spi_slave' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_status[9]' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_spi_slave' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_status[8]' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_spi_slave' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_status[7]' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_spi_slave' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_status[6]' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_spi_slave' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_status[5]' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_spi_slave' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_status[4]' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_spi_slave' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_status[3]' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_spi_slave' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_status[2]' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_spi_slave' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_status[1]' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_spi_slave' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_status[0]' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_dig_tx_asyn_fifo_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_dig_tx_asyn_fifo_data_in[11]' is connected to logic 0. 
+Warning: In design 'dig_tx_system', a pin on submodule 'u_dig_tx_asyn_fifo_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_dig_tx_asyn_fifo_re_en' is connected to logic 1. 
+Warning: In design 'dig_tx_system', the same net is connected to more than one pin on submodule 'u_spi_slave'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'i_scan_mode', 'i_ioring_rst_n'', 'i_status[15]', 'i_status[14]', 'i_status[13]', 'i_status[12]', 'i_status[11]', 'i_status[10]', 'i_status[9]', 'i_status[8]', 'i_status[7]', 'i_status[6]', 'i_status[5]', 'i_status[4]', 'i_status[3]', 'i_status[2]', 'i_status[1]', 'i_status[0]'.
+Warning: In design 'dig_tx_system', the same net is connected to more than one pin on submodule 'u_spi_slave'. (LINT-33)
+   Net 'spi_gated_clock' is connected to pins 'i_sck', 'i_sck_neg''.
+1
