@@ -9,7 +9,7 @@ Welcome to the repository documenting the **complete RTL-to-GDSII implementation
 This project aims to **apply a full digital ASIC design flow**, from RTL design to GDSII tapeout-ready layout, utilizing:
 
 *  **Synopsys Toolchain**
-*  **SAED 14nm Technology Library**
+*  **SAED 32nm Technology Library**
 *  **Modern nanoscale design practices**
 
 The result is a fully synthesized, placed, routed, and signoff-ready digital transmitter design.
@@ -24,7 +24,7 @@ This project follows the standard **ASIC implementation flow**:
 
 * Tool: **Design Compiler (DC)**
 * Converts RTL code into a gate-level netlist
-* Targets SAED 14nm technology
+* Targets SAED 32nm technology
 
 ### 2. Formal Verification
 
