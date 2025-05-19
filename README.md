@@ -34,7 +34,7 @@ The design journey includes:
 ├── Routing/                # Routing congestion maps, results, and reports
 ├── StarRC/                 # Parasitic extraction results
 └── STA_PrimeTime/          # Static Timing Analysis reports, SDF, and histogram
-
+```
 
 ---
 
