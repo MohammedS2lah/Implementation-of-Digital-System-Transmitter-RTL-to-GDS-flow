@@ -1,10 +1,10 @@
-# Formal Verification
+# 🧪 Formal Verification
 
 Formal verification is a crucial validation step performed immediately after synthesis to ensure that the design's functionality has not been altered during the transformation from RTL to gate-level netlist.
 
 ---
 
-## Overview and Purpose
+## 📌 Overview and Purpose
 
 In ASIC design, synthesis introduces structural changes through logic optimizations like **retiming**, **replication**, or **restructuring**. While these transformations enhance PPA (Power, Performance, Area), they may inadvertently impact the design’s behavior if not handled correctly.
 
@@ -14,23 +14,23 @@ By performing this check early—before floorplanning, test insertion, and place
 
 ---
 
-## Objectives
+## 🎯 Objectives
 
 The key targets of this stage include:
 
-- **Functional Equivalence:** Verify that the gate-level netlist behaves identically to the RTL across all possible input combinations.
-- **Error Detection:** Pinpoint any unintended mismatches introduced during synthesis due to optimizations or incorrect constraints.
-- **Signoff Readiness:** Certify the design is functionally correct and ready to proceed with physical implementation and DFT insertion.
+- ✅ **Functional Equivalence:** Verify that the gate-level netlist behaves identically to the RTL across all possible input combinations.
+- 🔍 **Error Detection:** Pinpoint any unintended mismatches introduced during synthesis due to optimizations or incorrect constraints.
+- 🏁 **Signoff Readiness:** Certify the design is functionally correct and ready to proceed with physical implementation and DFT insertion.
 
 ---
 
-## EDA Tool Used
+## ⚙️ EDA Tool Used
 
 Formal verification is conducted using **Synopsys Formality**, a powerful equivalence checking tool designed for comparing RTL with synthesized netlists using mathematically complete formal methods. Unlike simulation, which checks a subset of input patterns, Formality guarantees full coverage through symbolic analysis and Boolean equivalence checking.
 
 ---
 
-## Inputs to Formality
+## 📥 Inputs to Formality
 
 To perform equivalence checking, Formality requires the following inputs:
 
@@ -43,7 +43,7 @@ To perform equivalence checking, Formality requires the following inputs:
 
 ---
 
-## Outputs from Formality
+## 📤 Outputs from Formality
 
 After execution, Formality generates:
 
@@ -51,10 +51,12 @@ After execution, Formality generates:
 |---------------------------|-----------------------------------------------------------------------------|
 | **Equivalence Report**    | Indicates pass/fail status of equivalence checking.                         |
 | **Mismatch Report**       | Highlights any logical discrepancies and their causes.                      |
-| **Session Logs & Graphs** | Detailed logs used to analyze datapath alignment and convergence.           |
+| **Session Logs**          | Detailed logs used to analyze datapath alignment and convergence.           |
 
 ---
 
 
-![image](https://github.com/user-attachments/assets/17fb8729-688d-4dca-8d1e-aa09d9f2f2d7)
+
+![image](https://github.com/user-attachments/assets/9d18ae77-08a8-47a1-b9c8-48d17b63ed18)
+
 
