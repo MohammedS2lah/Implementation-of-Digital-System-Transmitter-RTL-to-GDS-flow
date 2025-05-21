@@ -52,3 +52,11 @@ The key goals of this stage are:
 | `Validated Design Environment`    | Setup ready for floorplanning, powrplanning, placement, CTS, and routing within ICC2 |
 
 
+
+---
+
+## IC Compiler II GUI after Data Setup stage
+
+
+![image](https://github.com/user-attachments/assets/b5473455-e943-4c77-b586-b991b505338d)
+
