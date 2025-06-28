@@ -24,19 +24,19 @@ Logical synthesis plays a crucial role in determining downstream success in achi
 
 During synthesis, the following critical objectives are targeted:
 
-* ✅ **Functional Equivalence**
+*  **Functional Equivalence**
   Ensure the gate-level netlist maintains the intended RTL functionality.
 
-* ⏱️ **Timing Closure**
+*  **Timing Closure**
   Meet **setup** constraints across all operating conditions.
 
-* 📏 **Area Efficiency**
+*  **Area Efficiency**
   Minimize logic depth and gate count to reduce silicon usage.
 
-* 🔋 **Power Optimization**
+*  **Power Optimization**
   Lower both **dynamic** and **static** power consumption.
 
-* 🕰️ **Clock Definition**
+*  **Clock Definition**
   Define clock domains, periods, and propagation for later stages.
 
 ---
@@ -82,10 +82,73 @@ After synthesis, the following key outputs are generated for use in **verificati
 
 ---
 
+## Inputs and outputs of the Synthesis Stage
+
 
 ![image](https://github.com/user-attachments/assets/71304f34-0a7e-4702-ae9a-2dd3d8af9703)
 
+---
 
+## Synthesis Area Report
+
+![image](https://github.com/user-attachments/assets/7ebdca18-af4a-4653-9f49-4844a43eaab0)
+
+---
+
+## Synthesis QoR Report
+
+![image](https://github.com/user-attachments/assets/c43023d9-6952-4c28-9240-04d840e9765a)
+
+---
+
+## Synthesis Timing Report
+
+![image](https://github.com/user-attachments/assets/f5a25a28-4ec9-408a-bc8d-bbad3f1ea12c)
+
+---
+
+## Synthesis optimization using: compile -retime -incremental_mapping 
+
+![image](https://github.com/user-attachments/assets/ef5ca3e3-5135-440c-8e96-b15ed1d5f6dc)
+
+---
+
+## Synthesis timing optimization using: compile -area_effort low -power_effort low -auto_ungroup delay -incremental_mapping
+
+![image](https://github.com/user-attachments/assets/60210e57-6f31-4846-87e4-3117e682bcaf)
+
+---
+---
+
+## DC GUI – Logical Hierarrchy 
+
+![image](https://github.com/user-attachments/assets/fbf929e9-3fd9-40d0-ae31-fc0aed448808)
+
+---
+
+## DC GUI – Gate level netlist Schematic
+
+![image](https://github.com/user-attachments/assets/9f593c52-7479-48de-8ee3-df33c8ade75d)
+
+---
+
+## DC GUI – Gate level netlist Schematic in details
+
+![image](https://github.com/user-attachments/assets/42a18240-b0ff-4266-b3cc-a0c2cae81f02)
+
+---
+
+## DC GUI – Histogram of 10 worst negative slacks
+
+![image](https://github.com/user-attachments/assets/5982b1ea-cd08-4f02-a1dd-a45547e0b494)
+
+---
+
+## DC GUI – Schematic view of Critical path (WNS)
+
+![image](https://github.com/user-attachments/assets/bbe8433b-d861-4a7c-abd2-a91971da6e67)
+
+---
 ---
 
 ## 📌 Summary
