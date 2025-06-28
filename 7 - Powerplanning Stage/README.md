@@ -69,5 +69,6 @@ The outcome is a **scalable and optimized power infrastructure**, ready to suppo
 
 ## ICC II GUI after Power Planning stage
 
-![image](https://github.com/user-attachments/assets/6c34745d-2bfc-49cb-8cd8-8e0da8ffa2da)
+![image](https://github.com/user-attachments/assets/1968d9e4-717f-43bc-ac9b-93950c3dd747)
+
 
