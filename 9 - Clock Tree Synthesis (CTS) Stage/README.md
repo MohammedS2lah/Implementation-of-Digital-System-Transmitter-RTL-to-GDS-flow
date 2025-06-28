@@ -97,5 +97,6 @@ Upon completion of CTS, the design achieves:
 
 ## ICC II GUI after CTS with Power Mesh
 
-![image](https://github.com/user-attachments/assets/015e615a-4957-4959-80d8-ebbab1e49ad0)
+![image](https://github.com/user-attachments/assets/310f3b0f-1c4f-436c-a593-01e6ce0cf1a1)
+
 
