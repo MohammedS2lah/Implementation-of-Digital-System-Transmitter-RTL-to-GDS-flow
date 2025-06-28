@@ -1,0 +1,148 @@
+ 
+****************************************
+Report : qor
+Design : dig_tx_system
+Version: O-2018.06-SP1
+Date   : Mon May 19 10:26:22 2025
+****************************************
+
+
+  Timing Path Group 'INOUT'
+  -----------------------------------
+  Levels of Logic:               1.00
+  Critical Path Length:          0.08
+  Critical Path Slack:           0.98
+  Critical Path Clk Period:      2.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'INREG'
+  -----------------------------------
+  Levels of Logic:               0.00
+  Critical Path Length:          0.04
+  Critical Path Slack:           0.20
+  Critical Path Clk Period:      2.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'REGOUT'
+  -----------------------------------
+  Levels of Logic:               3.00
+  Critical Path Length:          0.54
+  Critical Path Slack:          -0.07
+  Critical Path Clk Period:      2.00
+  Total Negative Slack:         -0.07
+  No. of Violating Paths:        1.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'spi_gated_clk'
+  -----------------------------------
+  Levels of Logic:               8.00
+  Critical Path Length:          0.70
+  Critical Path Slack:          -0.26
+  Critical Path Clk Period:      2.00
+  Total Negative Slack:        -20.87
+  No. of Violating Paths:      135.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'sys_clock'
+  -----------------------------------
+  Levels of Logic:               9.00
+  Critical Path Length:          1.14
+  Critical Path Slack:          -0.25
+  Critical Path Clk Period:      1.42
+  Total Negative Slack:        -22.30
+  No. of Violating Paths:      109.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'sys_gated_clk'
+  -----------------------------------
+  Levels of Logic:              11.00
+  Critical Path Length:          1.00
+  Critical Path Slack:          -0.11
+  Critical Path Clk Period:      1.42
+  Total Negative Slack:         -4.84
+  No. of Violating Paths:       60.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         27
+  Hierarchical Port Count:        489
+  Leaf Cell Count:               1523
+  Buf/Inv Cell Count:             216
+  Buf Cell Count:                  19
+  Inv Cell Count:                 197
+  CT Buf/Inv Cell Count:            2
+  Combinational Cell Count:      1145
+  Sequential Cell Count:          378
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     2793.296739
+  Noncombinational Area:  3402.479904
+  Buf/Inv Area:            385.282305
+  Total Buffer Area:            99.12
+  Total Inverter Area:         286.17
+  Macro/Black Box Area:      0.000000
+  Net Area:               1196.918380
+  -----------------------------------
+  Cell Area:              6195.776644
+  Design Area:            7392.695023
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          1978
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: IC_EDA
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.16
+  Logic Optimization:                  0.10
+  Mapping Optimization:               11.70
+  -----------------------------------------
+  Overall Compile Time:               26.70
+  Overall Compile Wall Clock Time:    28.51
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.26  TNS: 48.08  Number of Violating Paths: 305
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
