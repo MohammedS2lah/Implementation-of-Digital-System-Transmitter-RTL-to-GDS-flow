@@ -7,11 +7,11 @@ The Floorplanning stage initiates the physical implementation process in ASIC de
 ## 📌 Overview
 
 **Floorplanning** is the first major physical step after the NDM setup. It involves defining:
-- The **core area** and **die dimensions**
-- Placement of **macros, memories, and IP blocks**
-- Creation of **keep-out zones, halos**, and **blockages**
+- The **core area** and **die dimensions**.
+- Placement of **macros, memories, and IP blocks**.
+- Creation of **keep-out zones, halos**, and **blockages**.
 - Creation of **Site rows**, placement **well-tap cells**, and **Boundary cells**.
-- Initial setup for **power grid planning**
+- Initial setup for **power grid planning**.
 
 A robust floorplan not only minimizes routing congestion and timing bottlenecks but also helps achieve better design closure across corners and modes.
 
@@ -21,11 +21,11 @@ A robust floorplan not only minimizes routing congestion and timing bottlenecks 
 
 The floorplan serves several critical purposes:
 
-- 🧭 Define **core area and die size** based on utilization targets
-- 📌 Strategically place **macros, memories, and hard IPs** to minimize timing and routing congestion
-- ⚡ Prepare the design for **power planning** by defining boundaries and power domains
-- 🚫 Insert **halos, keep-out margins, and blockages** to reserve space for routing and avoid overlaps
-- 🔀 Enable optimal **logic-to-physical correlation** to improve proximity for critical nets and timing paths
+-  Define **core area and die size** based on utilization targets.
+-  Strategically place **macros, memories, and hard IPs** to minimize timing and routing congestion.
+-  Prepare the design for **power planning** by defining boundaries and power domains.
+-  Insert **halos, keep-out margins, and blockages** to reserve space for routing and avoid overlaps.
+-  Enable optimal **logic-to-physical correlation** to improve proximity for critical nets and timing paths.
 
 ---
 
@@ -35,10 +35,10 @@ During this stage, the following key targets are achieved:
 
 | Target                                | Description                                                                 |
 |---------------------------------------|-----------------------------------------------------------------------------|
-| ⚖️ Area-Congestion Balance             | Maximize utilization without overloading placement and routing resources    |
-| 🏁 White Space Allocation              | Leave enough space for CTS and congestion relief                            |
-| ⚡ Power Grid Channels                 | Ensure open regions for robust VDD/VSS routing                              |
-| 📐 Hierarchical Partitioning           | Align layout organization with netlist hierarchy                            |
+|  Area-Congestion Balance             | Maximize utilization without overloading placement and routing resources    |
+|  White Space Allocation              | Leave enough space for CTS and congestion relief                            |
+|  Power Grid Channels                 | Ensure open regions for robust VDD/VSS routing                              |
+|  Hierarchical Partitioning           | Align layout organization with netlist hierarchy                            |
 
 Upon completion, the floorplan acts as a scaffold for the rest of the flow: **placement**, **clock tree synthesis**, and **routing**, especially under **multi-corner multi-mode (MCMM)** analysis.
 
@@ -60,8 +60,7 @@ Upon completion, the floorplan acts as a scaffold for the rest of the flow: **pl
 | `FP Reports`                         | Reports on core utilization, block placement, congestion maps, etc.     |
 | `Updated NDM`                        | NDM now enriched with layout-level physical context                     |
 
----
----
+
 ---
 
 
@@ -106,3 +105,15 @@ Upon completion, the floorplan acts as a scaffold for the rest of the flow: **pl
 ## Spacing of 25 between well tap cells
 
 ![image](https://github.com/user-attachments/assets/977f0f44-7136-46f0-9f78-5c009a6d7b40)
+
+---
+
+## Global Timing report after floorplanning
+
+![image](https://github.com/user-attachments/assets/fdf1d170-0862-4fbd-b03b-3dd021a1d16e)
+
+---
+
+## Utilization report after floorplanning
+
+![image](https://github.com/user-attachments/assets/13bacc19-ce48-4e13-a2df-9ecbdcc184c7)
