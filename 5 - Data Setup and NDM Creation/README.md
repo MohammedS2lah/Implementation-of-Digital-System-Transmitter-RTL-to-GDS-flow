@@ -14,10 +14,10 @@ The **Data Setup and NDM Creation** stage is responsible for importing, and tran
 
 The key goals of this stage are:
 
-- 🔄 **Front-End Data Translation**: Convert RTL and synthesis outputs into ICC2-ready inputs.
-- 📥 **Library & Abstract Import**: Load and align Liberty, Milkyway, and LEF/DEF views.
-- 🧱 **NDM Initialization**: Create a hierarchical or flat design database in NDM format.
-- 🧪 **Cross-View Validation**: Ensure logical, physical, and timing views are synchronized for MCMM analysis.
+-  **Front-End Data Translation**: Convert RTL and synthesis outputs into ICC2-ready inputs.
+-  **Library & Abstract Import**: Load and align Liberty, Milkyway, and LEF/DEF views.
+-  **NDM Initialization**: Create a hierarchical or flat design database in NDM format.
+-  **Cross-View Validation**: Ensure logical, physical, and timing views are synchronized for MCMM analysis.
 
 ---
 
@@ -58,5 +58,6 @@ The key goals of this stage are:
 ## IC Compiler II GUI after Data Setup stage
 
 
-![image](https://github.com/user-attachments/assets/b5473455-e943-4c77-b586-b991b505338d)
+![image](https://github.com/user-attachments/assets/4e3abcba-5d00-447a-9679-c8f6b24ff2ed)
+
 
