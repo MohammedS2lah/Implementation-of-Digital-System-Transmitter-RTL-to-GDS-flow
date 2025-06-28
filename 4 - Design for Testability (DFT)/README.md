@@ -16,10 +16,10 @@ The ultimate goal is to ensure **high fault coverage**, **short test time**, and
 
 The main objectives of the DFT stage include:
 
-- 🔄 **Scan Insertion:** Embed scan chains into flip-flops to make internal logic observable and controllable during test mode.
-- 🎯 **High Fault Coverage:** Maximize detection of potential manufacturing defects using structural testing techniques.
-- 🧭 **DFT Rule Compliance:** Ensure adherence to scan design guidelines, naming conventions, and clock domain constraints.
-- 🪶 **Minimal Design Impact:** Insert test logic with minimal overhead on area, timing, and power.
+-  **Scan Insertion:** Embed scan chains into flip-flops to make internal logic observable and controllable during test mode.
+-  **High Fault Coverage:** Maximize detection of potential manufacturing defects using structural testing techniques.
+-  **DFT Rule Compliance:** Ensure adherence to scan design guidelines, naming conventions, and clock domain constraints.
+-  **Minimal Design Impact:** Insert test logic with minimal overhead on area, timing, and power.
 
 ---
 
